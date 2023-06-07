@@ -1,0 +1,501 @@
+"Winning.Percentage","Pk","DraftYr","MPG","salary","season","name","team","MPGcat.Winning.Percentage","MPGcat.Pk","MPGcat.DraftYr","MPGcat.MPG","MPGcat.salary","MPGcat.season","MPGcat.name","MPGcat.team"
+0.305,50,1997,15.8,2000000,2000,"Chris Crawford","Atlanta Hawks",0.305,50,1997,Medium,2000000,2000,Chris Crawford,Atlanta Hawks
+0.451,43,1998,17.7,3922000,2001,"Jahidi White","Washington Wizards",0.451,43,1998,Medium,3922000,2001,Jahidi White,Washington Wizards
+0.341,41,1998,37.0,3922000,2001,"Cuttino Mobley","Houston Rockets",0.341,41,1998,Very High,3922000,2001,Cuttino Mobley,Houston Rockets
+0.549,32,1998,32.0,3920000,2001,"Rashard Lewis","Seattle SuperSonics",0.549,32,1998,High,3920000,2001,Rashard Lewis,Seattle SuperSonics
+0.476, 1,1998,26.3,3697000,2001,"Michael Olowokandi","Los Angeles Clippers",0.476, 1,1998,High,3697000,2001,Michael Olowokandi,Los Angeles Clippers
+0.280, 2,1998,33.9,3308000,2001,"Mike Bibby","Memphis Grizzlies",0.280, 2,1998,High,3308000,2001,Mike Bibby,Memphis Grizzlies
+0.329, 3,1998,25.8,2970000,2001,"Raef LaFrentz","Denver Nuggets",0.329, 3,1998,High,2970000,2001,Raef LaFrentz,Denver Nuggets
+0.256, 4,1998,34.8,2678000,2001,"Antawn Jamison","Golden State Warriors",0.256, 4,1998,High,2678000,2001,Antawn Jamison,Golden State Warriors
+0.512, 5,1998,30.1,2425000,2001,"Vince Carter","Toronto Raptors",0.512, 5,1998,High,2425000,2001,Vince Carter,Toronto Raptors
+0.354, 6,1998,14.3,2203000,2001,"Robert Traylor","Cleveland Cavaliers",0.354, 6,1998,Medium,2203000,2001,Robert Traylor,Cleveland Cavaliers
+0.744, 7,1998,29.4,2011000,2001,"Jason Williams","Sacramento Kings",0.744, 7,1998,High,2011000,2001,Jason Williams,Sacramento Kings
+0.256, 8,1998,30.8,1842000,2001,"Larry Hughes","Golden State Warriors",0.256, 8,1998,High,1842000,2001,Larry Hughes,Golden State Warriors
+0.695, 9,1998,33.8,1693000,2001,"Dirk Nowitzki","Dallas Mavericks",0.695, 9,1998,High,1693000,2001,Dirk Nowitzki,Dallas Mavericks
+0.598,10,1998,34.2,1608000,2001,"Paul Pierce","Boston Celtics",0.598,10,1998,High,1608000,2001,Paul Pierce,Boston Celtics
+0.598,11,1998,25.6,1528000,2001,"Bonzi Wells","Portland Trail Blazers",0.598,11,1998,High,1528000,2001,Bonzi Wells,Portland Trail Blazers
+0.512,13,1998,22.6,1379000,2001,"Keon Clark","Toronto Raptors",0.512,13,1998,Medium,1379000,2001,Keon Clark,Toronto Raptors
+0.280,14,1998,35.3,1310000,2001,"Michael Dickerson","Memphis Grizzlies",0.280,14,1998,High,1310000,2001,Michael Dickerson,Memphis Grizzlies
+0.354,15,1998,26.4,1244000,2001,"Matt Harpring","Cleveland Cavaliers",0.354,15,1998,High,1244000,2001,Matt Harpring,Cleveland Cavaliers
+0.695,53,1998,19.1,1100000,2001,"Greg Buckner","Dallas Mavericks",0.695,53,1998,Medium,1100000,2001,Greg Buckner,Dallas Mavericks
+0.537,19,1998,20.0,1019000,2001,"Pat Garrity","Orlando Magic",0.537,19,1998,Medium,1019000,2001,Pat Garrity,Orlando Magic
+0.549,31,1998,24.6, 990000,2001,"Ruben Patterson","Seattle SuperSonics",0.549,31,1998,High, 990000,2001,Ruben Patterson,Seattle SuperSonics
+0.524,20,1998,18.8, 978000,2001,"Roshown McLeod","Philadelphia 76ers",0.524,20,1998,Medium, 978000,2001,Roshown McLeod,Philadelphia 76ers
+0.439,21,1998,29.8, 939000,2001,"Ricky Davis","Miami Heat",0.439,21,1998,High, 939000,2001,Ricky Davis,Miami Heat
+0.476,22,1998,17.9, 901000,2001,"Brian Skinner","Los Angeles Clippers",0.476,22,1998,Medium, 901000,2001,Brian Skinner,Los Angeles Clippers
+0.707,23,1998,22.7, 865000,2001,"Tyronn Lue","Los Angeles Lakers",0.707,23,1998,Medium, 865000,2001,Tyronn Lue,Los Angeles Lakers
+0.512,25,1998,28.6, 797000,2001,"Al Harrington","Indiana Pacers",0.512,25,1998,High, 797000,2001,Al Harrington,Indiana Pacers
+0.256,28,1998,14.3, 744000,2001,"Corey Benjamin","Chicago Bulls",0.256,28,1998,Medium, 744000,2001,Corey Benjamin,Chicago Bulls
+0.524,29,1998,15.8, 739000,2001,"Nazr Mohammed","Philadelphia 76ers",0.524,29,1998,Medium, 739000,2001,Nazr Mohammed,Philadelphia 76ers
+0.549,34,1998,16.5, 550000,2001,"Shammond Williams","Seattle SuperSonics",0.549,34,1998,Medium, 550000,2001,Shammond Williams,Seattle SuperSonics
+0.329,55,1998,12.8, 508000,2001,"Ryan Bowen","Denver Nuggets",0.329,55,1998,Medium, 508000,2001,Ryan Bowen,Denver Nuggets
+0.500,39,1998,28.9, 423000,2001,"Rafer Alston","Milwaukee Bucks",0.500,39,1998,High, 423000,2001,Rafer Alston,Milwaukee Bucks
+0.488,35,1999,12.2,4539000,2002,"Calvin Booth","Seattle SuperSonics",0.488,35,1999,Medium,4539000,2002,Calvin Booth,Seattle SuperSonics
+0.524, 2,1999,37.6,3473000,2002,"Steve Francis","Houston Rockets",0.524, 2,1999,Very High,3473000,2002,Steve Francis,Houston Rockets
+0.573, 3,1999,34.2,3119000,2002,"Baron Davis","Charlotte Hornets",0.573, 3,1999,High,3119000,2002,Baron Davis,Charlotte Hornets
+0.732,34,1999,14.0,3038000,2002,"Evan Eschmeyer","Dallas Mavericks",0.732,34,1999,Medium,3038000,2002,Evan Eschmeyer,Dallas Mavericks
+0.585, 5,1999,14.7,2546000,2002,"Jonathan Bender","Indiana Pacers",0.585, 5,1999,Medium,2546000,2002,Jonathan Bender,Indiana Pacers
+0.622, 6,1999,30.8,2313000,2002,"Wally Szczerbiak","Minnesota Timberwolves",0.622, 6,1999,High,2313000,2002,Wally Szczerbiak,Minnesota Timberwolves
+0.451, 7,1999,32.1,2111000,2002,"Richard Hamilton","Washington Wizards",0.451, 7,1999,High,2111000,2002,Richard Hamilton,Washington Wizards
+0.207, 8,1999,30.9,1934000,2002,"Andre Miller","Cleveland Cavaliers",0.207, 8,1999,High,1934000,2002,Andre Miller,Cleveland Cavaliers
+0.537, 9,1999,34.5,1778000,2002,"Shawn Marion","Phoenix Suns",0.537, 9,1999,High,1778000,2002,Shawn Marion,Phoenix Suns
+0.427,10,1999,29.8,1689000,2002,"Jason Terry","Atlanta Hawks",0.427,10,1999,High,1689000,2002,Jason Terry,Atlanta Hawks
+0.207,11,1999,14.6,1604000,2002,"Trajan Langdon","Cleveland Cavaliers",0.207,11,1999,Medium,1604000,2002,Trajan Langdon,Cleveland Cavaliers
+0.585,16,1999,31.7,1241000,2002,"Metta World Peace","Indiana Pacers",0.585,16,1999,High,1241000,2002,Metta World Peace,Indiana Pacers
+0.427,17,1999, 9.7,1179000,2002,"Cal Bowdler","Atlanta Hawks",0.427,17,1999,Low,1179000,2002,Cal Bowdler,Atlanta Hawks
+0.207,18,1999,26.9,1120000,2002,"James Posey","Denver Nuggets",0.207,18,1999,High,1120000,2002,James Posey,Denver Nuggets
+0.573,19,1999,11.7,1070000,2002,"Quincy Lewis","Utah Jazz",0.573,19,1999,Low,1070000,2002,Quincy Lewis,Utah Jazz
+0.427,20,1999,20.9,1027000,2002,"Dion Glover","Atlanta Hawks",0.427,20,1999,Medium,1027000,2002,Dion Glover,Atlanta Hawks
+0.585,21,1999,20.6, 986000,2002,"Jeff Foster","Indiana Pacers",0.585,21,1999,Medium, 986000,2002,Jeff Foster,Indiana Pacers
+0.524,22,1999,27.4, 946000,2002,"Kenny Thomas","Houston Rockets",0.524,22,1999,High, 946000,2002,Kenny Thomas,Houston Rockets
+0.585,25,1999, 6.1, 837000,2002,"Tim James","Philadelphia 76ers",0.585,25,1999,Low, 837000,2002,Tim James,Philadelphia 76ers
+0.610,23,1999,18.5, 834000,2002,"Devean George","Los Angeles Lakers",0.610,23,1999,Medium, 834000,2002,Devean George,Los Angeles Lakers
+0.573,24,1999,30.0, 831000,2002,"Andrei Kirilenko","Utah Jazz",0.573,24,1999,High, 831000,2002,Andrei Kirilenko,Utah Jazz
+0.585,26,1999,19.0, 810000,2002,"Vonteego Cummings","Philadelphia 76ers",0.585,26,1999,Medium, 810000,2002,Vonteego Cummings,Philadelphia 76ers
+0.207,27,1999,20.8, 786000,2002,"Jumaine Jones","Cleveland Cavaliers",0.207,27,1999,Medium, 786000,2002,Jumaine Jones,Cleveland Cavaliers
+0.573,28,1999,12.5, 781000,2002,"Scott Padgett","Utah Jazz",0.573,28,1999,Medium, 781000,2002,Scott Padgett,Utah Jazz
+0.598,47,1999,15.4, 550000,2002,"Todd MacCulloch","Brooklyn Nets",0.598,47,1999,Medium, 550000,2002,Todd MacCulloch,Brooklyn Nets
+0.585,32,1999,14.4, 540000,2002,"Michael Ruffin","Philadelphia 76ers",0.585,32,1999,Medium, 540000,2002,Michael Ruffin,Philadelphia 76ers
+0.341,53,1999,18.2, 540000,2002,"Rodney Buford","Memphis Grizzlies",0.341,53,1999,Medium, 540000,2002,Rodney Buford,Memphis Grizzlies
+0.573,43,1999,19.0, 466000,2002,"Lee Nailon","Charlotte Hornets",0.573,43,1999,Medium, 466000,2002,Lee Nailon,Charlotte Hornets
+0.573, 1,2000,30.6,4067000,2003,"Kenyon Martin","Brooklyn Nets",0.573, 1,2000,High,4067000,2003,Kenyon Martin,Brooklyn Nets
+0.610, 2,2000,19.8,3656000,2003,"Stromile Swift","Memphis Grizzlies",0.610, 2,2000,Medium,3656000,2003,Stromile Swift,Memphis Grizzlies
+0.427, 3,2000,26.3,3267000,2003,"Darius Miles","Cleveland Cavaliers",0.427, 3,2000,High,3267000,2003,Darius Miles,Cleveland Cavaliers
+0.280, 4,2000,20.9,2946000,2003,"Marcus Fizer","Chicago Bulls",0.280, 4,2000,Medium,2946000,2003,Marcus Fizer,Chicago Bulls
+0.610, 5,2000,26.9,2668000,2003,"Mike Miller","Memphis Grizzlies",0.610, 5,2000,High,2668000,2003,Mike Miller,Memphis Grizzlies
+0.427, 7,2000,20.1,2222000,2003,"Chris Mihm","Cleveland Cavaliers",0.427, 7,2000,Medium,2222000,2003,Chris Mihm,Cleveland Cavaliers
+0.280, 8,2000,29.4,2026000,2003,"Jamal Crawford","Chicago Bulls",0.280, 8,2000,High,2026000,2003,Jamal Crawford,Chicago Bulls
+0.500, 9,2000,19.8,1862000,2003,"Joel Przybilla","Milwaukee Bucks",0.500, 9,2000,Medium,1862000,2003,Joel Przybilla,Milwaukee Bucks
+0.305,12,2000,17.3,1605000,2003,"Etan Thomas","Washington Wizards",0.305,12,2000,Medium,1605000,2003,Etan Thomas,Washington Wizards
+0.671,14,2000,11.2,1441000,2003,"Mateen Cleaves","Sacramento Kings",0.671,14,2000,Low,1441000,2003,Mateen Cleaves,Sacramento Kings
+0.549,15,2000,14.4,1376000,2003,"Jason Collier","Houston Rockets",0.549,15,2000,Medium,1376000,2003,Jason Collier,Houston Rockets
+0.451,17,2000,30.5,1235000,2003,"Desmond Mason","Seattle SuperSonics",0.451,17,2000,High,1235000,2003,Desmond Mason,Seattle SuperSonics
+0.695,20,2000,25.6,1081000,2003,"Speedy Claxton","San Antonio Spurs",0.695,20,2000,High,1081000,2003,Speedy Claxton,San Antonio Spurs
+0.402,21,2000,27.2,1033000,2003,"Morris Peterson","Toronto Raptors",0.402,21,2000,High,1033000,2003,Morris Peterson,Toronto Raptors
+0.524,22,2000,16.2, 992000,2003,"Donnell Harvey","Denver Nuggets",0.524,22,2000,Medium, 992000,2003,Donnell Harvey,Denver Nuggets
+0.512,23,2000,22.3, 956000,2003,"DeShawn Stevenson","Utah Jazz",0.512,23,2000,Medium, 956000,2003,DeShawn Stevenson,Utah Jazz
+0.354,25,2000,15.9, 877000,2003,"Jake Tsakalidis","Phoenix Suns",0.354,25,2000,Medium, 877000,2003,Jake Tsakalidis,Phoenix Suns
+0.683,29,2000,11.8, 817000,2003,"Mark Madsen","Los Angeles Lakers",0.683,29,2000,Low, 817000,2003,Mark Madsen,Los Angeles Lakers
+0.354,33,2000,14.3, 587000,2003,"Jake Voskuhl","Phoenix Suns",0.354,33,2000,Medium, 587000,2003,Jake Voskuhl,Phoenix Suns
+0.256,42,2000, 6.3, 587000,2003,"Olumide Oyedeji","Orlando Magic",0.256,42,2000,Low, 587000,2003,Olumide Oyedeji,Orlando Magic
+0.549, 1,2001,22.1,4252000,2004,"Kwame Brown","Washington Wizards",0.549, 1,2001,Medium,4252000,2004,Kwame Brown,Washington Wizards
+0.549, 3,2001,33.4,3417000,2004,"Pau Gasol","Memphis Grizzlies",0.549, 3,2001,High,3417000,2004,Pau Gasol,Memphis Grizzlies
+0.549, 6,2001,30.7,2533000,2004,"Shane Battier","Memphis Grizzlies",0.549, 6,2001,High,2533000,2004,Shane Battier,Memphis Grizzlies
+0.512, 8,2001,14.0,2118000,2004,"DeSagana Diop","Cleveland Cavaliers",0.512, 8,2001,Medium,2118000,2004,DeSagana Diop,Cleveland Cavaliers
+0.598, 9,2001,15.4,1948000,2004,"Rodney White","Denver Nuggets",0.598, 9,2001,Medium,1948000,2004,Rodney White,Denver Nuggets
+0.756,10,2001,34.6,1850000,2004,"Joe Johnson","Phoenix Suns",0.756,10,2001,High,1850000,2004,Joe Johnson,Phoenix Suns
+0.512,11,2001,13.5,1757000,2004,"Kedrick Brown","Cleveland Cavaliers",0.512,11,2001,Medium,1757000,2004,Kedrick Brown,Cleveland Cavaliers
+0.512,13,2001,29.0,1586000,2004,"Richard Jefferson","Brooklyn Nets",0.512,13,2001,High,1586000,2004,Richard Jefferson,Brooklyn Nets
+0.415,14,2001,27.3,1507000,2004,"Troy Murphy","Golden State Warriors",0.415,14,2001,High,1507000,2004,Troy Murphy,Golden State Warriors
+0.402,17,2001,11.7,1292000,2004,"Michael Bradley","Toronto Raptors",0.402,17,2001,Low,1292000,2004,Michael Bradley,Toronto Raptors
+0.512,18,2001,20.4,1227000,2004,"Jason Collins","Brooklyn Nets",0.512,18,2001,Medium,1227000,2004,Jason Collins,Brooklyn Nets
+0.329,19,2001,31.0,1172000,2004,"Zach Randolph","Portland Trail Blazers",0.329,19,2001,High,1172000,2004,Zach Randolph,Portland Trail Blazers
+0.512,23,2001, 6.5, 995000,2004,"Brandon Armstrong","Brooklyn Nets",0.512,23,2001,Low, 995000,2004,Brandon Armstrong,Brooklyn Nets
+0.524,26,2001,24.4, 887000,2004,"Samuel Dalembert","Philadelphia 76ers",0.524,26,2001,High, 887000,2004,Samuel Dalembert,Philadelphia 76ers
+0.537,27,2001,26.4, 861000,2004,"Jamaal Tinsley","Indiana Pacers",0.537,27,2001,High, 861000,2004,Jamaal Tinsley,Indiana Pacers
+0.720,28,2001,30.5, 856000,2004,"Tony Parker","San Antonio Spurs",0.720,28,2001,High, 856000,2004,Tony Parker,San Antonio Spurs
+0.610,25,2001,29.7, 764000,2004,"Gerald Wallace","Sacramento Kings",0.610,25,2001,High, 764000,2004,Gerald Wallace,Sacramento Kings
+0.537,30,2001,25.3, 587000,2004,"Trenton Hassell","Minnesota Timberwolves",0.537,30,2001,High, 587000,2004,Trenton Hassell,Minnesota Timberwolves
+0.610, 1,2003,38.2,4621800,2006,"LeBron James","Cleveland Cavaliers",0.610, 1,2003,Very High,4621800,2006,LeBron James,Cleveland Cavaliers
+0.366,42,2003,20.3,4000000,2006,"Zaza Pachulia","Atlanta Hawks",0.366,42,2003,Medium,4000000,2006,Zaza Pachulia,Atlanta Hawks
+0.549, 3,2003,34.7,3713640,2006,"Carmelo Anthony","Denver Nuggets",0.549, 3,2003,High,3713640,2006,Carmelo Anthony,Denver Nuggets
+0.427,51,2003,25.3,3636364,2006,"Kyle Korver","Philadelphia 76ers",0.427,51,2003,High,3636364,2006,Kyle Korver,Philadelphia 76ers
+0.573, 4,2003,35.8,3348000,2006,"Chris Bosh","Toronto Raptors",0.573, 4,2003,High,3348000,2006,Chris Bosh,Toronto Raptors
+0.537, 5,2003,33.9,3031920,2006,"Dwyane Wade","Miami Heat",0.537, 5,2003,High,3031920,2006,Dwyane Wade,Miami Heat
+0.598, 7,2003,30.7,2513880,2006,"Kirk Hinrich","Chicago Bulls",0.598, 7,2003,High,2513880,2006,Kirk Hinrich,Chicago Bulls
+0.744,49,2003,15.7,2400000,2006,"James Jones","Phoenix Suns",0.744,49,2003,Medium,2400000,2006,James Jones,Phoenix Suns
+0.341, 8,2003,27.7,2303040,2006,"T.J. Ford","Milwaukee Bucks",0.341, 8,2003,High,2303040,2006,T.J. Ford,Milwaukee Bucks
+0.500,10,2003,23.2,2011080,2006,"Jarvis Hayes","Washington Wizards",0.500,10,2003,Medium,2011080,2006,Jarvis Hayes,Washington Wizards
+0.573,45,2003,16.9,2000000,2006,"Matt Bonner","Toronto Raptors",0.573,45,2003,Medium,2000000,2006,Matt Bonner,Toronto Raptors
+0.378,12,2003,20.4,1815000,2006,"Nick Collison","Seattle SuperSonics",0.378,12,2003,Medium,1815000,2006,Nick Collison,Seattle SuperSonics
+0.341,47,2003,29.2,1760000,2006,"Mo Williams","Milwaukee Bucks",0.341,47,2003,High,1760000,2006,Mo Williams,Milwaukee Bucks
+0.390,13,2003,16.0,1724280,2006,"Marcus Banks","Minnesota Timberwolves",0.390,13,2003,Medium,1724280,2006,Marcus Banks,Minnesota Timberwolves
+0.378,14,2003,26.1,1638000,2006,"Luke Ridnour","Seattle SuperSonics",0.378,14,2003,High,1638000,2006,Luke Ridnour,Seattle SuperSonics
+0.341,15,2003, 8.5,1556160,2006,"Reece Gaines","Milwaukee Bucks",0.341,15,2003,Low,1556160,2006,Reece Gaines,Milwaukee Bucks
+0.268,20,2003,15.7,1223160,2006,"Dahntay Jones","Memphis Grizzlies",0.268,20,2003,Medium,1223160,2006,Dahntay Jones,Memphis Grizzlies
+0.744,21,2003,27.0,1174200,2006,"Boris Diaw","Phoenix Suns",0.744,21,2003,High,1174200,2006,Boris Diaw,Phoenix Suns
+0.512,32,2003,17.2,1125000,2006,"Luke Walton","Los Angeles Lakers",0.512,32,2003,Medium,1125000,2006,Luke Walton,Los Angeles Lakers
+0.537,31,2003,17.8,1100000,2006,"Jason Kapono","Miami Heat",0.537,31,2003,Medium,1100000,2006,Jason Kapono,Miami Heat
+0.390,23,2003,20.9,1082160,2006,"Travis Outlaw","Portland Trail Blazers",0.390,23,2003,Medium,1082160,2006,Travis Outlaw,Portland Trail Blazers
+0.512,24,2003,13.4,1038960,2006,"Brian Cook","Los Angeles Lakers",0.512,24,2003,Medium,1038960,2006,Brian Cook,Los Angeles Lakers
+0.390,38,2003,23.9,1000000,2006,"Steve Blake","Portland Trail Blazers",0.390,38,2003,Medium,1000000,2006,Steve Blake,Portland Trail Blazers
+0.646,25,2003,22.8, 969600,2006,"Carlos Delfino","Detroit Pistons",0.646,25,2003,Medium, 969600,2006,Carlos Delfino,Detroit Pistons
+0.293,27,2003,21.9, 936480,2006,"Kendrick Perkins","Boston Celtics",0.293,27,2003,Medium, 936480,2006,Kendrick Perkins,Boston Celtics
+0.744,28,2003,21.6, 930600,2006,"Leandro Barbosa","Phoenix Suns",0.744,28,2003,Medium, 930600,2006,Leandro Barbosa,Phoenix Suns
+0.817,29,2003,30.3, 923880,2006,"Josh Howard","Dallas Mavericks",0.817,29,2003,High, 923880,2006,Josh Howard,Dallas Mavericks
+0.402,43,2003,21.6, 869373,2006,"Keith Bogans","Charlotte Bobcats",0.402,43,2003,Medium, 869373,2006,Keith Bogans,Charlotte Bobcats
+0.634,30,2003, 9.9, 858534,2006,"Maciej Lampe","Houston Rockets",0.634,30,2003,Low, 858534,2006,Maciej Lampe,Houston Rockets
+0.634, 1,2004,31.9,4806720,2007,"Dwight Howard","Orlando Magic",0.634, 1,2004,High,4806720,2007,Dwight Howard,Orlando Magic
+0.390, 2,2004,30.9,4300560,2007,"Emeka Okafor","Charlotte Bobcats",0.390, 2,2004,High,4300560,2007,Emeka Okafor,Charlotte Bobcats
+0.402, 3,2004,27.4,3862080,2007,"Ben Gordon","Chicago Bulls",0.402, 3,2004,High,3862080,2007,Ben Gordon,Chicago Bulls
+0.622, 5,2004,24.3,3153120,2007,"Devin Harris","Dallas Mavericks",0.622, 5,2004,High,3153120,2007,Devin Harris,Dallas Mavericks
+0.634,43,2004,29.5,3100000,2007,"Trevor Ariza","Orlando Magic",0.634,43,2004,High,3100000,2007,Trevor Ariza,Orlando Magic
+0.402,38,2004,25.6,3024000,2007,"Chris Duhon","Chicago Bulls",0.402,38,2004,High,3024000,2007,Chris Duhon,Chicago Bulls
+0.451, 6,2004,26.7,2863920,2007,"Josh Childress","Atlanta Hawks",0.451, 6,2004,High,2863920,2007,Josh Childress,Atlanta Hawks
+0.402, 7,2004,34.3,2614440,2007,"Luol Deng","Chicago Bulls",0.402, 7,2004,High,2614440,2007,Luol Deng,Chicago Bulls
+0.488, 9,2004,32.3,2201640,2007,"Andre Iguodala","Philadelphia 76ers",0.488, 9,2004,High,2201640,2007,Andre Iguodala,Philadelphia 76ers
+0.244,12,2004,15.5,1887600,2007,"Robert Swift","Seattle SuperSonics",0.244,12,2004,Medium,1887600,2007,Robert Swift,Seattle SuperSonics
+0.671,50,2004, 8.8,1800000,2007,"Vassilis Spanoulis","Houston Rockets",0.671,50,2004,Low,1800000,2007,Vassilis Spanoulis,Houston Rockets
+0.805,13,2004,21.5,1793160,2007,"Sebastian Telfair","Boston Celtics",0.805,13,2004,Medium,1793160,2007,Sebastian Telfair,Boston Celtics
+0.500,14,2004,17.8,1703520,2007,"Kris Humphries","Toronto Raptors",0.500,14,2004,Medium,1703520,2007,Kris Humphries,Toronto Raptors
+0.805,15,2004,28.7,1618320,2007,"Al Jefferson","Boston Celtics",0.805,15,2004,High,1618320,2007,Al Jefferson,Boston Celtics
+0.671,16,2004,16.8,1537440,2007,"Kirk Snyder","Houston Rockets",0.671,16,2004,Medium,1537440,2007,Kirk Snyder,Houston Rockets
+0.268,40,2004,10.6,1529873,2007,"Justin Reed","Minnesota Timberwolves",0.268,40,2004,Low,1529873,2007,Justin Reed,Minnesota Timberwolves
+0.451,17,2004,32.4,1460640,2007,"Josh Smith","Atlanta Hawks",0.451,17,2004,High,1460640,2007,Josh Smith,Atlanta Hawks
+0.183,19,2004,22.4,1325160,2007,"Dorell Wright","Miami Heat",0.183,19,2004,Medium,1325160,2007,Dorell Wright,Miami Heat
+0.634,20,2004,27.9,1272120,2007,"Jameer Nelson","Orlando Magic",0.634,20,2004,High,1272120,2007,Jameer Nelson,Orlando Magic
+0.622,21,2004, 4.7,1221240,2007,"Pavel Podkolzin","Dallas Mavericks",0.622,21,2004,Low,1221240,2007,Pavel Podkolzin,Dallas Mavericks
+0.805,24,2004,27.4,1080480,2007,"Delonte West","Boston Celtics",0.805,24,2004,High,1080480,2007,Delonte West,Boston Celtics
+0.805,25,2004,22.0,1037280,2007,"Tony Allen","Boston Celtics",0.805,25,2004,Medium,1037280,2007,Tony Allen,Boston Celtics
+0.463,26,2004,30.2,1002840,2007,"Kevin Martin","Sacramento Kings",0.463,26,2004,High,1002840,2007,Kevin Martin,Sacramento Kings
+0.390,45,2004,14.9,1000000,2007,"Bernard Robinson","Charlotte Bobcats",0.390,45,2004,Medium,1000000,2007,Bernard Robinson,Charlotte Bobcats
+0.683,28,2004,21.9, 967920,2007,"Beno Udrih","San Antonio Spurs",0.683,28,2004,Medium, 967920,2007,Beno Udrih,San Antonio Spurs
+0.439,29,2004,14.2, 960840,2007,"David Harrison","Indiana Pacers",0.439,29,2004,Medium, 960840,2007,David Harrison,Indiana Pacers
+0.500,47,2004,11.6, 744551,2007,"Pape Sow","Toronto Raptors",0.500,47,2004,Low, 744551,2007,Pape Sow,Toronto Raptors
+0.524,32,2004, 3.3, 744551,2007,"Peter John Ramos","Washington Wizards",0.524,32,2004,Low, 744551,2007,Peter John Ramos,Washington Wizards
+0.451,37,2004,12.5, 744551,2007,"Royal Ivey","Atlanta Hawks",0.451,37,2004,Medium, 744551,2007,Royal Ivey,Atlanta Hawks
+0.500,10,2004, 9.9, 109493,2007,"Luke Jackson","Toronto Raptors",0.500,10,2004,Low, 109493,2007,Luke Jackson,Toronto Raptors
+0.415, 1,2005,28.1,4991520,2008,"Andrew Bogut","Milwaukee Bucks",0.415, 1,2005,High,4991520,2008,Andrew Bogut,Milwaukee Bucks
+0.573, 2,2005,28.1,4466040,2008,"Marvin Williams","Atlanta Hawks",0.573, 2,2005,High,4466040,2008,Marvin Williams,Atlanta Hawks
+0.585, 3,2005,34.2,4010640,2008,"Deron Williams","Utah Jazz",0.585, 3,2005,High,4010640,2008,Deron Williams,Utah Jazz
+0.476,56,2005,21.1,3666667,2008,"Amir Johnson","Detroit Pistons",0.476,56,2005,Medium,3666667,2008,Amir Johnson,Detroit Pistons
+0.427, 5,2005,29.7,3274440,2008,"Raymond Felton","Charlotte Bobcats",0.427, 5,2005,High,3274440,2008,Raymond Felton,Charlotte Bobcats
+0.659, 6,2005,24.0,2974080,2008,"Martell Webster","Portland Trail Blazers",0.659, 6,2005,Medium,2974080,2008,Martell Webster,Portland Trail Blazers
+0.415, 7,2005,20.7,2715000,2008,"Charlie Villanueva","Milwaukee Bucks",0.415, 7,2005,Medium,2715000,2008,Charlie Villanueva,Milwaukee Bucks
+0.659, 8,2005,22.2,2487240,2008,"Channing Frye","Portland Trail Blazers",0.659, 8,2005,Medium,2487240,2008,Channing Frye,Portland Trail Blazers
+0.232,49,2005,22.1,2479339,2008,"Andray Blatche","Washington Wizards",0.232,49,2005,Medium,2479339,2008,Andray Blatche,Washington Wizards
+0.439, 9,2005,12.4,2286360,2008,"Ike Diogu","Indiana Pacers",0.439, 9,2005,Medium,2286360,2008,Ike Diogu,Indiana Pacers
+0.793,10,2005,25.6,2172000,2008,"Andrew Bynum","Los Angeles Lakers",0.793,10,2005,High,2172000,2008,Andrew Bynum,Los Angeles Lakers
+0.427,13,2005,15.7,1862160,2008,"Sean May","Charlotte Bobcats",0.427,13,2005,Medium,1862160,2008,Sean May,Charlotte Bobcats
+0.293,14,2005,20.2,1769160,2008,"Rashad McCants","Minnesota Timberwolves",0.293,14,2005,Medium,1769160,2008,Rashad McCants,Minnesota Timberwolves
+0.415,15,2005,19.2,1680600,2008,"Antoine Wright","Brooklyn Nets",0.415,15,2005,Medium,1680600,2008,Antoine Wright,Brooklyn Nets
+0.402,16,2005,16.2,1596600,2008,"Joey Graham","Toronto Raptors",0.402,16,2005,Medium,1596600,2008,Joey Graham,Toronto Raptors
+0.439,17,2005,31.5,1516800,2008,"Danny Granger","Indiana Pacers",0.439,17,2005,High,1516800,2008,Danny Granger,Indiana Pacers
+0.439,38,2005,14.9,1500000,2008,"Travis Diener","Indiana Pacers",0.439,38,2005,Medium,1500000,2008,Travis Diener,Indiana Pacers
+0.293,18,2005,19.8,1440960,2008,"Gerald Green","Minnesota Timberwolves",0.293,18,2005,Medium,1440960,2008,Gerald Green,Minnesota Timberwolves
+0.293,19,2005,20.2,1376040,2008,"Hakim Warrick","Memphis Grizzlies",0.293,19,2005,Medium,1376040,2008,Hakim Warrick,Memphis Grizzlies
+0.390,21,2005,22.5,1268160,2008,"Nate Robinson","New York Knicks",0.390,21,2005,Medium,1268160,2008,Nate Robinson,New York Knicks
+0.659,22,2005,27.8,1217400,2008,"Jarrett Jack","Portland Trail Blazers",0.659,22,2005,High,1217400,2008,Jarrett Jack,Portland Trail Blazers
+0.646,24,2005,22.4,1122000,2008,"Luther Head","Houston Rockets",0.646,24,2005,Medium,1122000,2008,Luther Head,Houston Rockets
+0.476,26,2005,18.4,1041360,2008,"Jason Maxiell","Detroit Pistons",0.476,26,2005,Medium,1041360,2008,Jason Maxiell,Detroit Pistons
+0.659,27,2005,20.0,1011360,2008,"Linas Kleiza","Denver Nuggets",0.659,27,2005,Medium,1011360,2008,Linas Kleiza,Denver Nuggets
+0.524,29,2005, 9.9, 997800,2008,"Wayne Simien","Miami Heat",0.524,29,2005,Low, 997800,2008,Wayne Simien,Miami Heat
+0.390,30,2005,29.3, 990600,2008,"David Lee","New York Knicks",0.390,30,2005,High, 990600,2008,David Lee,New York Knicks
+0.585,34,2005,20.4, 945610,2008,"C.J. Miles","Utah Jazz",0.585,34,2005,Medium, 945610,2008,C.J. Miles,Utah Jazz
+0.573,31,2005,17.0, 783000,2008,"Salim Stoudamire","Atlanta Hawks",0.573,31,2005,Medium, 783000,2008,Salim Stoudamire,Atlanta Hawks
+0.793,37,2005,17.0, 770610,2008,"Ronny Turiaf","Los Angeles Lakers",0.793,37,2005,Medium, 770610,2008,Ronny Turiaf,Los Angeles Lakers
+0.659,39,2005,12.4, 770610,2008,"Von Wafer","Portland Trail Blazers",0.659,39,2005,Medium, 770610,2008,Von Wafer,Portland Trail Blazers
+0.207,53,2005,11.9, 770610,2008,"Orien Greene","Sacramento Kings",0.207,53,2005,Low, 770610,2008,Orien Greene,Sacramento Kings
+0.500,45,2005,24.3, 770610,2008,"Lou Williams","Philadelphia 76ers",0.500,45,2005,High, 770610,2008,Lou Williams,Philadelphia 76ers
+0.610,33,2005,21.6, 770610,2008,"Brandon Bass","Dallas Mavericks",0.610,33,2005,Medium, 770610,2008,Brandon Bass,Dallas Mavericks
+0.354,40,2005,34.8, 770610,2008,"Monta Ellis","Golden State Warriors",0.354,40,2005,High, 770610,2008,Monta Ellis,Golden State Warriors
+0.293,50,2005,27.6, 770610,2008,"Ryan Gomes","Minnesota Timberwolves",0.293,50,2005,High, 770610,2008,Ryan Gomes,Minnesota Timberwolves
+0.659,28,2005,16.8, 625840,2008,"Ian Mahinmi","San Antonio Spurs",0.659,28,2005,Medium, 625840,2008,Ian Mahinmi,San Antonio Spurs
+0.720,57,2005,25.7, 427163,2008,"Marcin Gortat","Orlando Magic",0.720,57,2005,High, 427163,2008,Marcin Gortat,Orlando Magic
+0.488, 1,2006,28.7,5176440,2009,"Andrea Bargnani","Toronto Raptors",0.488, 1,2006,High,5176440,2009,Andrea Bargnani,Toronto Raptors
+0.610, 2,2006,33.8,4631400,2009,"LaMarcus Aldridge","Portland Trail Blazers",0.610, 2,2006,High,4631400,2009,LaMarcus Aldridge,Portland Trail Blazers
+0.537, 3,2006,20.4,4159200,2009,"Adam Morrison","Charlotte Bobcats",0.537, 3,2006,Medium,4159200,2009,Adam Morrison,Charlotte Bobcats
+0.500, 4,2006,19.7,3749880,2009,"Tyrus Thomas","Chicago Bulls",0.500, 4,2006,Medium,3749880,2009,Tyrus Thomas,Chicago Bulls
+0.744,42,2006,23.5,3700000,2009,"Daniel Gibson","Cleveland Cavaliers",0.744,42,2006,Medium,3700000,2009,Daniel Gibson,Cleveland Cavaliers
+0.305, 5,2006,15.5,3395760,2009,"Shelden Williams","Sacramento Kings",0.305, 5,2006,Medium,3395760,2009,Shelden Williams,Sacramento Kings
+0.610, 6,2006,35.5,3084240,2009,"Brandon Roy","Portland Trail Blazers",0.610, 6,2006,High,3084240,2009,Brandon Roy,Portland Trail Blazers
+0.183, 7,2006,25.6,2815560,2009,"Randy Foye","Minnesota Timberwolves",0.183, 7,2006,High,2815560,2009,Randy Foye,Minnesota Timberwolves
+0.488, 8,2006,32.0,2579400,2009,"Rudy Gay","Memphis Grizzlies",0.488, 8,2006,High,2579400,2009,Rudy Gay,Memphis Grizzlies
+0.183,36,2006,16.9,2500000,2009,"Craig Smith","Minnesota Timberwolves",0.183,36,2006,Medium,2500000,2009,Craig Smith,Minnesota Timberwolves
+0.610,10,2006, 5.5,2252400,2009,"Mouhamed Sene","Oklahoma City Thunder",0.610,10,2006,Low,2252400,2009,Mouhamed Sene,Oklahoma City Thunder
+0.610,13,2006,21.9,1931160,2009,"Thabo Sefolosha","Oklahoma City Thunder",0.610,13,2006,Medium,1931160,2009,Thabo Sefolosha,Oklahoma City Thunder
+0.646,14,2006,23.0,1834680,2009,"Ronnie Brewer","Utah Jazz",0.646,14,2006,Medium,1834680,2009,Ronnie Brewer,Utah Jazz
+0.305,15,2006, 9.4,1742760,2009,"Cedric Simmons","Sacramento Kings",0.305,15,2006,Low,1742760,2009,Cedric Simmons,Sacramento Kings
+0.183,16,2006,15.4,1655760,2009,"Rodney Carney","Minnesota Timberwolves",0.183,16,2006,Medium,1655760,2009,Rodney Carney,Minnesota Timberwolves
+0.671,17,2006,17.1,1572960,2009,"Shawne Williams","Dallas Mavericks",0.671,17,2006,Medium,1572960,2009,Shawne Williams,Dallas Mavericks
+0.317,18,2006, 9.4,1446720,2009,"Oleksiy Pecherov","Washington Wizards",0.317,18,2006,Low,1446720,2009,Oleksiy Pecherov,Washington Wizards
+0.488,19,2006,10.7,1427040,2009,"Quincy Douby","Toronto Raptors",0.488,19,2006,Low,1427040,2009,Quincy Douby,Toronto Raptors
+0.646,20,2006,13.9,1369920,2009,"Renaldo Balkman","Denver Nuggets",0.646,20,2006,Medium,1369920,2009,Renaldo Balkman,Denver Nuggets
+0.610,21,2006,30.0,1315080,2009,"Rajon Rondo","Boston Celtics",0.610,21,2006,High,1315080,2009,Rajon Rondo,Boston Celtics
+0.317,22,2006,15.2,1262520,2009,"Marcus Williams","Golden State Warriors",0.317,22,2006,Medium,1262520,2009,Marcus Williams,Golden State Warriors
+0.146,23,2006,17.5,1212120,2009,"Josh Boone","Brooklyn Nets",0.146,23,2006,Medium,1212120,2009,Josh Boone,Brooklyn Nets
+0.488,24,2006,31.9,1163520,2009,"Kyle Lowry","Memphis Grizzlies",0.488,24,2006,High,1163520,2009,Kyle Lowry,Memphis Grizzlies
+0.695,26,2006,19.5,1080000,2009,"Jordan Farmar","Los Angeles Lakers",0.695,26,2006,Medium,1080000,2009,Jordan Farmar,Los Angeles Lakers
+0.146,28,2006, 6.2,1042440,2009,"Maurice Ager","Brooklyn Nets",0.146,28,2006,Low,1042440,2009,Maurice Ager,Brooklyn Nets
+0.354,29,2006,14.7,1034760,2009,"Mardy Collins","New York Knicks",0.354,29,2006,Medium,1034760,2009,Mardy Collins,New York Knicks
+0.537,50,2006,11.8, 972581,2009,"Ryan Hollins","Charlotte Bobcats",0.537,50,2006,Low, 972581,2009,Ryan Hollins,Charlotte Bobcats
+0.488, 9,2006, 5.8, 797581,2009,"Patrick O'Bryant","Toronto Raptors",0.488, 9,2006,Low, 797581,2009,Patrick O'Bryant,Toronto Raptors
+0.610,49,2006,13.9, 797581,2009,"Leon Powe","Boston Celtics",0.610,49,2006,Medium, 797581,2009,Leon Powe,Boston Celtics
+0.537,25,2006,18.0, 797581,2009,"Shannon Brown","Charlotte Bobcats",0.537,25,2006,Medium, 797581,2009,Shannon Brown,Charlotte Bobcats
+0.646,47,2006,28.2, 797581,2009,"Paul Millsap","Utah Jazz",0.646,47,2006,High, 797581,2009,Paul Millsap,Utah Jazz
+0.646,37,2006, 9.5, 797581,2009,"Bobby Jones","Denver Nuggets",0.646,37,2006,Low, 797581,2009,Bobby Jones,Denver Nuggets
+0.646,33,2006,11.0, 797581,2009,"Solomon Jones","Atlanta Hawks",0.646,33,2006,Low, 797581,2009,Solomon Jones,Atlanta Hawks
+0.488,54,2006, 7.5, 711517,2009,"Hassan Adams","Toronto Raptors",0.488,54,2006,Low, 711517,2009,Hassan Adams,Toronto Raptors
+0.354,51,2006, 5.2, 711517,2009,"Cheikh Samb","New York Knicks",0.354,51,2006,Low, 711517,2009,Cheikh Samb,New York Knicks
+0.317,46,2006,10.5, 711517,2009,"Dee Brown","Washington Wizards",0.317,46,2006,Low, 711517,2009,Dee Brown,Washington Wizards
+0.512,31,2006, 8.7, 184157,2009,"James White","Houston Rockets",0.512,31,2006,Low, 184157,2009,James White,Houston Rockets
+0.585, 1,2007,19.3,5361240,2010,"Greg Oden","Portland Trail Blazers",0.585, 1,2007,Medium,5361240,2010,Greg Oden,Portland Trail Blazers
+0.671, 2,2007,36.7,4796880,2010,"Kevin Durant","Oklahoma City Thunder",0.671, 2,2007,Very High,4796880,2010,Kevin Durant,Oklahoma City Thunder
+0.537, 3,2007,32.2,4307640,2010,"Al Horford","Atlanta Hawks",0.537, 3,2007,High,4307640,2010,Al Horford,Atlanta Hawks
+0.561, 4,2007,32.0,3883800,2010,"Mike Conley","Memphis Grizzlies",0.561, 4,2007,High,3883800,2010,Mike Conley,Memphis Grizzlies
+0.207,56,2007,23.3,3670667,2010,"Ramon Sessions","Minnesota Timberwolves",0.207,56,2007,Medium,3670667,2010,Ramon Sessions,Minnesota Timberwolves
+0.671, 5,2007,29.1,3516960,2010,"Jeff Green","Oklahoma City Thunder",0.671, 5,2007,High,3516960,2010,Jeff Green,Oklahoma City Thunder
+0.561,48,2007,32.2,3333333,2010,"Marc Gasol","Memphis Grizzlies",0.561,48,2007,High,3333333,2010,Marc Gasol,Memphis Grizzlies
+0.293, 6,2007,22.2,3194400,2010,"Yi Jianlian","Brooklyn Nets",0.293, 6,2007,Medium,3194400,2010,Yi Jianlian,Brooklyn Nets
+0.683,35,2007,21.1,3000004,2010,"Glen Davis","Boston Celtics",0.683,35,2007,Medium,3000004,2010,Glen Davis,Boston Celtics
+0.293,31,2007,22.5,3000000,2010,"Carl Landry","Sacramento Kings",0.293,31,2007,Medium,3000000,2010,Carl Landry,Sacramento Kings
+0.207, 7,2007,22.9,2916120,2010,"Corey Brewer","Minnesota Timberwolves",0.207, 7,2007,Medium,2916120,2010,Corey Brewer,Minnesota Timberwolves
+0.524, 8,2007,16.2,2671440,2010,"Brandan Wright","Houston Rockets",0.524, 8,2007,Medium,2671440,2010,Brandan Wright,Houston Rockets
+0.756, 9,2007,27.7,2455680,2010,"Joakim Noah","Chicago Bulls",0.756, 9,2007,High,2455680,2010,Joakim Noah,Chicago Bulls
+0.293,10,2007,22.7,2332800,2010,"Spencer Hawes","Sacramento Kings",0.293,10,2007,Medium,2332800,2010,Spencer Hawes,Sacramento Kings
+0.415,11,2007,12.7,2216160,2010,"Acie Law","Charlotte Bobcats",0.415,11,2007,Medium,2216160,2010,Acie Law,Charlotte Bobcats
+0.500,12,2007,29.5,2105400,2010,"Thaddeus Young","Philadelphia 76ers",0.500,12,2007,High,2105400,2010,Thaddeus Young,Philadelphia 76ers
+0.280,14,2007,28.0,1900200,2010,"Al Thornton","Washington Wizards",0.280,14,2007,High,1900200,2010,Al Thornton,Washington Wizards
+0.366,15,2007,27.5,1805040,2010,"Rodney Stuckey","Detroit Pistons",0.366,15,2007,High,1805040,2010,Rodney Stuckey,Detroit Pistons
+0.280,16,2007,22.8,1714800,2010,"Nick Young","Washington Wizards",0.280,16,2007,Medium,1714800,2010,Nick Young,Washington Wizards
+0.293,17,2007,14.4,1629120,2010,"Sean Williams","Brooklyn Nets",0.293,17,2007,Medium,1629120,2010,Sean Williams,Brooklyn Nets
+0.268,18,2007,22.7,1547640,2010,"Marco Belinelli","Toronto Raptors",0.268,18,2007,Medium,1547640,2010,Marco Belinelli,Toronto Raptors
+0.280,19,2007,16.4,1477920,2010,"Javaris Crittenton","Washington Wizards",0.280,19,2007,Medium,1477920,2010,Javaris Crittenton,Washington Wizards
+0.500,20,2007,16.3,1418880,2010,"Jason Smith","Philadelphia 76ers",0.500,20,2007,Medium,1418880,2010,Jason Smith,Philadelphia 76ers
+0.707,21,2007,18.3,1362120,2010,"Daequan Cook","Miami Heat",0.707,21,2007,Medium,1362120,2010,Daequan Cook,Miami Heat
+0.488,22,2007,22.3,1307640,2010,"Jared Dudley","Phoenix Suns",0.488,22,2007,Medium,1307640,2010,Jared Dudley,Phoenix Suns
+0.512,23,2007,30.0,1255440,2010,"Wilson Chandler","New York Knicks",0.512,23,2007,High,1255440,2010,Wilson Chandler,New York Knicks
+0.524,26,2007,20.8,1118520,2010,"Aaron Brooks","Houston Rockets",0.524,26,2007,Medium,1118520,2010,Aaron Brooks,Houston Rockets
+0.610,27,2007,27.3,1086240,2010,"Arron Afflalo","Denver Nuggets",0.610,27,2007,High,1086240,2010,Arron Afflalo,Denver Nuggets
+0.488,29,2007, 8.4,1071720,2010,"Alando Tucker","Phoenix Suns",0.488,29,2007,Low,1071720,2010,Alando Tucker,Phoenix Suns
+0.756,49,2007,12.1,1000497,2010,"Aaron Gray","Chicago Bulls",0.756,49,2007,Medium,1000497,2010,Aaron Gray,Chicago Bulls
+0.476,38,2007, 8.2, 870000,2010,"Kyrylo Fesenko","Utah Jazz",0.476,38,2007,Low, 870000,2010,Kyrylo Fesenko,Utah Jazz
+0.280,47,2007,15.6, 825497,2010,"Dominic McGuire","Washington Wizards",0.280,47,2007,Medium, 825497,2010,Dominic McGuire,Washington Wizards
+0.561,33,2007, 3.0, 825497,2010,"Marcus Williams","Memphis Grizzlies",0.561,33,2007,Low, 825497,2010,Marcus Williams,Memphis Grizzlies
+0.439,36,2007, 8.3, 825497,2010,"Jermareo Davidson","Golden State Warriors",0.439,36,2007,Low, 825497,2010,Jermareo Davidson,Golden State Warriors
+0.610,33,2007, 3.0, 825497,2010,"Marcus Williams","Denver Nuggets",0.610,33,2007,Low, 825497,2010,Marcus Williams,Denver Nuggets
+0.451,37,2007,19.1, 825497,2010,"Josh McRoberts","Indiana Pacers",0.451,37,2007,Medium, 825497,2010,Josh McRoberts,Indiana Pacers
+0.683,32,2007, 7.4, 825497,2010,"Gabe Pruitt","Boston Celtics",0.683,32,2007,Low, 825497,2010,Gabe Pruitt,Boston Celtics
+0.695,40,2007, 2.8, 736420,2010,"Sun Yue","Los Angeles Lakers",0.695,40,2007,Low, 736420,2010,Sun Yue,Los Angeles Lakers
+0.561,42,2007,18.5, 457588,2010,"Derrick Byars","Memphis Grizzlies",0.561,42,2007,Medium, 457588,2010,Derrick Byars,Memphis Grizzlies
+0.756,41,2007,11.1, 186271,2010,"Chris Richard","Chicago Bulls",0.756,41,2007,Low, 186271,2010,Chris Richard,Chicago Bulls
+0.758, 1,2008,31.7,5546160,2011,"Derrick Rose","Chicago Bulls",0.758, 1,2008,High,5546160,2011,Derrick Rose,Chicago Bulls
+0.394, 2,2008,22.8,4962240,2011,"Michael Beasley","Minnesota Timberwolves",0.394, 2,2008,Medium,4962240,2011,Michael Beasley,Minnesota Timberwolves
+0.621, 3,2008,30.9,4456200,2011,"O.J. Mayo","Memphis Grizzlies",0.621, 3,2008,High,4456200,2011,O.J. Mayo,Memphis Grizzlies
+0.712, 4,2008,34.7,4017720,2011,"Russell Westbrook","Oklahoma City Thunder",0.712, 4,2008,High,4017720,2011,Russell Westbrook,Oklahoma City Thunder
+0.394, 5,2008,31.1,3638280,2011,"Kevin Love","Minnesota Timberwolves",0.394, 5,2008,High,3638280,2011,Kevin Love,Minnesota Timberwolves
+0.545, 6,2008,29.9,3304560,2011,"Danilo Gallinari","New York Knicks",0.545, 6,2008,High,3304560,2011,Danilo Gallinari,New York Knicks
+0.106, 9,2008,23.5,2540000,2011,"D.J. Augustin","Charlotte Bobcats",0.106, 9,2008,Medium,2540000,2011,D.J. Augustin,Charlotte Bobcats
+0.333,10,2008,30.3,2413320,2011,"Brook Lopez","Brooklyn Nets",0.333,10,2008,High,2413320,2011,Brook Lopez,Brooklyn Nets
+0.348,11,2008,21.3,2292600,2011,"Jerryd Bayless","Toronto Raptors",0.348,11,2008,Medium,2292600,2011,Jerryd Bayless,Toronto Raptors
+0.333,12,2008,25.2,2178000,2011,"Jason Thompson","Sacramento Kings",0.333,12,2008,High,2178000,2011,Jason Thompson,Sacramento Kings
+0.636,13,2008,22.0,2069040,2011,"Brandon Rush","Indiana Pacers",0.636,13,2008,Medium,2069040,2011,Brandon Rush,Indiana Pacers
+0.545,14,2008,15.2,1965720,2011,"Anthony Randolph","New York Knicks",0.545,14,2008,Medium,1965720,2011,Anthony Randolph,New York Knicks
+0.500,15,2008,22.0,1867320,2011,"Robin Lopez","Phoenix Suns",0.500,15,2008,Medium,1867320,2011,Robin Lopez,Phoenix Suns
+0.530,16,2008,15.1,1773960,2011,"Marreese Speights","Philadelphia 76ers",0.530,16,2008,Medium,1773960,2011,Marreese Speights,Philadelphia 76ers
+0.636,17,2008,24.8,1685280,2011,"Roy Hibbert","Indiana Pacers",0.636,17,2008,High,1685280,2011,Roy Hibbert,Indiana Pacers
+0.303,18,2008,17.1,1601040,2011,"JaVale McGee","Washington Wizards",0.303,18,2008,Medium,1601040,2011,JaVale McGee,Washington Wizards
+0.561,21,2008,25.8,1409040,2011,"Ryan Anderson","Orlando Magic",0.561,21,2008,High,1409040,2011,Ryan Anderson,Orlando Magic
+0.515,22,2008,27.1,1352640,2011,"Courtney Lee","Houston Rockets",0.515,22,2008,High,1352640,2011,Courtney Lee,Houston Rockets
+0.394,23,2008,16.4,1298640,2011,"Kosta Koufos","Minnesota Timberwolves",0.394,23,2008,Medium,1298640,2011,Kosta Koufos,Minnesota Timberwolves
+0.712,24,2008,27.8,1204200,2011,"Serge Ibaka","Oklahoma City Thunder",0.712,24,2008,High,1204200,2011,Serge Ibaka,Oklahoma City Thunder
+0.424,25,2008,30.8,1196760,2011,"Nicolas Batum","Portland Trail Blazers",0.424,25,2008,High,1196760,2011,Nicolas Batum,Portland Trail Blazers
+0.621,27,2008,17.8,1123680,2011,"Darrell Arthur","Memphis Grizzlies",0.621,27,2008,Medium,1123680,2011,Darrell Arthur,Memphis Grizzlies
+0.106,29,2008,15.3,1108680,2011,"D.J. White","Charlotte Bobcats",0.106,29,2008,Medium,1108680,2011,D.J. White,Charlotte Bobcats
+0.545,38,2008,18.9, 854389,2011,"Kyle Weaver","Utah Jazz",0.545,38,2008,Medium, 854389,2011,Kyle Weaver,Utah Jazz
+0.697,34,2008,26.7, 854389,2011,"Mario Chalmers","Miami Heat",0.697,34,2008,High, 854389,2011,Mario Chalmers,Miami Heat
+0.758,48,2008, 7.6, 854389,2011,"Malik Hairston","San Antonio Spurs",0.758,48,2008,Low, 854389,2011,Malik Hairston,San Antonio Spurs
+0.348,39,2008,18.2, 854389,2011,"Sonny Weems","Toronto Raptors",0.348,39,2008,Medium, 854389,2011,Sonny Weems,Toronto Raptors
+0.758,26,2008,27.4, 854389,2011,"George Hill","San Antonio Spurs",0.758,26,2008,High, 854389,2011,George Hill,San Antonio Spurs
+0.545,47,2008,16.7, 854389,2011,"Henry Walker","New York Knicks",0.545,47,2008,Medium, 854389,2011,Henry Walker,New York Knicks
+0.333,52,2008, 7.5, 854389,2011,"Darnell Jackson","Sacramento Kings",0.333,52,2008,Low, 854389,2011,Darnell Jackson,Sacramento Kings
+0.470,37,2008,23.3, 854389,2011,"Luc Mbah a Moute","Milwaukee Bucks",0.470,37,2008,Medium, 854389,2011,Luc Mbah a Moute,Milwaukee Bucks
+0.348, 8,2008,11.1, 854389,2011,"Joe Alexander","Golden State Warriors",0.348, 8,2008,Low, 854389,2011,Joe Alexander,Golden State Warriors
+0.348,33,2008,11.4, 854389,2011,"Joey Dorsey","Toronto Raptors",0.348,33,2008,Low, 854389,2011,Joey Dorsey,Toronto Raptors
+0.470,40,2008,19.7, 854389,2011,"Chris Douglas-Roberts","Milwaukee Bucks",0.470,40,2008,Medium, 854389,2011,Chris Douglas-Roberts,Milwaukee Bucks
+0.545,58,2008,11.5, 736420,2011,"Joe Crawford","New York Knicks",0.545,58,2008,Low, 736420,2011,Joe Crawford,New York Knicks
+0.379,32,2008, 2.5, 736420,2011,"Walter Sharpe","Detroit Pistons",0.379,32,2008,Low, 736420,2011,Walter Sharpe,Detroit Pistons
+0.318,60,2008,13.4, 473604,2011,"Semih Erden","Cleveland Cavaliers",0.318,60,2008,Medium, 473604,2011,Semih Erden,Cleveland Cavaliers
+0.341,43,2009,23.4,7525000,2012,"Marcus Thornton","Sacramento Kings",0.341,43,2009,Medium,7525000,2012,Marcus Thornton,Sacramento Kings
+0.341, 4,2009,30.7,5251825,2012,"Tyreke Evans","Sacramento Kings",0.341, 4,2009,High,5251825,2012,Tyreke Evans,Sacramento Kings
+0.402, 2,2009,10.5,5127720,2012,"Hasheem Thabeet","Portland Trail Blazers",0.402, 2,2009,Low,5127720,2012,Hasheem Thabeet,Portland Trail Blazers
+0.732, 3,2009,34.6,4604760,2012,"James Harden","Oklahoma City Thunder",0.732, 3,2009,High,4604760,2012,James Harden,Oklahoma City Thunder
+0.354,39,2009,17.8,4500000,2012,"Jonas Jerebko","Detroit Pistons",0.354,39,2009,Medium,4500000,2012,Jonas Jerebko,Detroit Pistons
+0.378, 5,2009,30.3,3480120,2012,"Ricky Rubio","Minnesota Timberwolves",0.378, 5,2009,High,3480120,2012,Ricky Rubio,Minnesota Timberwolves
+0.402, 6,2009,22.9,3414720,2012,"Jonny Flynn","Portland Trail Blazers",0.402, 6,2009,Medium,3414720,2012,Jonny Flynn,Portland Trail Blazers
+0.415, 9,2009,34.2,3344250,2012,"DeMar DeRozan","Toronto Raptors",0.415, 9,2009,High,3344250,2012,DeMar DeRozan,Toronto Raptors
+0.573, 7,2009,34.4,3117120,2012,"Stephen Curry","Golden State Warriors",0.573, 7,2009,High,3117120,2012,Stephen Curry,Golden State Warriors
+0.549, 8,2009,18.8,2855760,2012,"Jordan Hill","Los Angeles Lakers",0.549, 8,2009,Medium,2855760,2012,Jordan Hill,Los Angeles Lakers
+0.415,16,2009,20.5,2812006,2012,"James Johnson","Toronto Raptors",0.415,16,2009,Medium,2812006,2012,James Johnson,Toronto Raptors
+0.415,17,2009,33.2,2674852,2012,"Jrue Holiday","Philadelphia 76ers",0.415,17,2009,High,2674852,2012,Jrue Holiday,Philadelphia 76ers
+0.463,10,2009,30.3,2493720,2012,"Brandon Jennings","Milwaukee Bucks",0.463,10,2009,High,2493720,2012,Brandon Jennings,Milwaukee Bucks
+0.256,12,2009,25.9,2250600,2012,"Gerald Henderson","Charlotte Bobcats",0.256,12,2009,High,2250600,2012,Gerald Henderson,Charlotte Bobcats
+0.605,13,2009,16.9,2138040,2012,"Tyler Hansbrough","Indiana Pacers",0.605,13,2009,Medium,2138040,2012,Tyler Hansbrough,Indiana Pacers
+0.683,33,2009,20.8,2000000,2012,"Dante Cunningham","Memphis Grizzlies",0.683,33,2009,Medium,2000000,2012,Dante Cunningham,Memphis Grizzlies
+0.354,15,2009,14.1,1929600,2012,"Austin Daye","Detroit Pistons",0.354,15,2009,Medium,1929600,2012,Austin Daye,Detroit Pistons
+0.695,18,2009,29.2,1654440,2012,"Ty Lawson","Denver Nuggets",0.695,18,2009,High,1654440,2012,Ty Lawson,Denver Nuggets
+0.537,19,2009,26.8,1579920,2012,"Jeff Teague","Atlanta Hawks",0.537,19,2009,High,1579920,2012,Jeff Teague,Atlanta Hawks
+0.732,20,2009,14.6,1516680,2012,"Eric Maynor","Oklahoma City Thunder",0.732,20,2009,Medium,1516680,2012,Eric Maynor,Oklahoma City Thunder
+0.605,31,2009, 9.8,1500000,2012,"Jeff Ayres","Indiana Pacers",0.605,31,2009,Low,1500000,2012,Jeff Ayres,Indiana Pacers
+0.605,21,2009,29.3,1455960,2012,"Darren Collison","Indiana Pacers",0.605,21,2009,High,1455960,2012,Darren Collison,Indiana Pacers
+0.293,23,2009,20.3,1341960,2012,"Omri Casspi","Cleveland Cavaliers",0.293,23,2009,Medium,1341960,2012,Omri Casspi,Cleveland Cavaliers
+0.256,24,2009,18.2,1288200,2012,"Byron Mullens","Charlotte Bobcats",0.256,24,2009,Medium,1288200,2012,Byron Mullens,Charlotte Bobcats
+0.500,25,2009,15.9,1236720,2012,"Rodrigue Beaubois","Dallas Mavericks",0.500,25,2009,Medium,1236720,2012,Rodrigue Beaubois,Dallas Mavericks
+0.549,26,2009,24.6,1195680,2012,"Taj Gibson","Chicago Bulls",0.549,26,2009,High,1195680,2012,Taj Gibson,Chicago Bulls
+0.683,36,2009,15.9,1184750,2012,"Sam Young","Memphis Grizzlies",0.683,36,2009,Medium,1184750,2012,Sam Young,Memphis Grizzlies
+0.244,14,2009,13.9,1160000,2012,"Earl Clark","Orlando Magic",0.244,14,2009,Medium,1160000,2012,Earl Clark,Orlando Magic
+0.378,28,2009,20.9,1154040,2012,"Wayne Ellington","Minnesota Timberwolves",0.378,28,2009,Medium,1154040,2012,Wayne Ellington,Minnesota Timberwolves
+0.659,29,2009,19.1,1145640,2012,"Toney Douglas","New York Knicks",0.659,29,2009,Medium,1145640,2012,Toney Douglas,New York Knicks
+0.549,30,2009,20.6,1097520,2012,"Christian Eyenga","Los Angeles Lakers",0.549,30,2009,Medium,1097520,2012,Christian Eyenga,Los Angeles Lakers
+0.707,37,2009,16.6,1054000,2012,"DeJuan Blair","San Antonio Spurs",0.707,37,2009,Medium,1054000,2012,DeJuan Blair,San Antonio Spurs
+0.463,38,2009,10.5,1000000,2012,"Jon Brockman","Milwaukee Bucks",0.463,38,2009,Low,1000000,2012,Jon Brockman,Milwaukee Bucks
+0.524,27,2009,23.7, 885120,2012,"DeMarre Carroll","Utah Jazz",0.524,27,2009,Medium, 885120,2012,DeMarre Carroll,Utah Jazz
+0.415,41,2009,22.5, 854389,2012,"Jodie Meeks","Philadelphia 76ers",0.415,41,2009,Medium, 854389,2012,Jodie Meeks,Philadelphia 76ers
+0.256,40,2009,14.9, 854389,2012,"Derrick Brown","Charlotte Bobcats",0.256,40,2009,Medium, 854389,2012,Derrick Brown,Charlotte Bobcats
+0.605,52,2009,15.1, 854389,2012,"A.J. Price","Indiana Pacers",0.605,52,2009,Medium, 854389,2012,A.J. Price,Indiana Pacers
+0.549,44,2009,19.7, 854389,2012,"Chase Budinger","Houston Rockets",0.549,44,2009,Medium, 854389,2012,Chase Budinger,Houston Rockets
+0.707,46,2009,25.5, 854389,2012,"Danny Green","San Antonio Spurs",0.707,46,2009,High, 854389,2012,Danny Green,San Antonio Spurs
+0.293,32,2009,12.1, 780871,2012,"Jermaine Taylor","Cleveland Cavaliers",0.293,32,2009,Medium, 780871,2012,Jermaine Taylor,Cleveland Cavaliers
+0.305,48,2009, 4.0, 762195,2012,"Taylor Griffin","Phoenix Suns",0.305,48,2009,Low, 762195,2012,Taylor Griffin,Phoenix Suns
+0.341,11,2009,19.1, 254938,2012,"Terrence Williams","Sacramento Kings",0.341,11,2009,Medium, 254938,2012,Terrence Williams,Sacramento Kings
+0.707,55,2009,20.7, 213517,2012,"Patty Mills","San Antonio Spurs",0.707,55,2009,Medium, 213517,2012,Patty Mills,San Antonio Spurs
+0.683,58,2009,10.4,  48232,2012,"Lester Hudson","Memphis Grizzlies",0.683,58,2009,Low,  48232,2012,Lester Hudson,Memphis Grizzlies
+0.537, 1,2010,35.6,7459925,2013,"John Wall","Washington Wizards",0.537, 1,2010,High,7459925,2013,John Wall,Washington Wizards
+0.585,39,2010,23.6,6250000,2013,"Landry Fields","Toronto Raptors",0.585,39,2010,Medium,6250000,2013,Landry Fields,Toronto Raptors
+0.232, 2,2010,26.9,5293080,2013,"Evan Turner","Philadelphia 76ers",0.232, 2,2010,High,5293080,2013,Evan Turner,Philadelphia 76ers
+0.305, 3,2010,24.3,4753320,2013,"Derrick Favors","Utah Jazz",0.305, 3,2010,High,4753320,2013,Derrick Favors,Utah Jazz
+0.585, 4,2010,22.1,4285560,2013,"Wesley Johnson","Phoenix Suns",0.585, 4,2010,Medium,4285560,2013,Wesley Johnson,Phoenix Suns
+0.341, 5,2010,30.4,3880800,2013,"DeMarcus Cousins","Sacramento Kings",0.341, 5,2010,High,3880800,2013,DeMarcus Cousins,Sacramento Kings
+0.183, 6,2010,14.8,3524880,2013,"Ekpe Udoh","Milwaukee Bucks",0.183, 6,2010,Medium,3524880,2013,Ekpe Udoh,Milwaukee Bucks
+0.354, 7,2010,27.5,3217680,2013,"Greg Monroe","Detroit Pistons",0.354, 7,2010,High,3217680,2013,Greg Monroe,Detroit Pistons
+0.305, 9,2010,31.1,2709720,2013,"Gordon Hayward","Utah Jazz",0.305, 9,2010,High,2709720,2013,Gordon Hayward,Utah Jazz
+0.683,10,2010,33.6,2574120,2013,"Paul George","Indiana Pacers",0.683,10,2010,High,2574120,2013,Paul George,Indiana Pacers
+0.341,11,2010,10.0,2445480,2013,"Cole Aldrich","Sacramento Kings",0.341,11,2010,Low,2445480,2013,Cole Aldrich,Sacramento Kings
+0.537,23,2010,20.4,2350820,2013,"Trevor Booker","Washington Wizards",0.537,23,2010,Medium,2350820,2013,Trevor Booker,Washington Wizards
+0.610,13,2010,19.3,2207040,2013,"Ed Davis","Memphis Grizzlies",0.610,13,2010,Medium,2207040,2013,Ed Davis,Memphis Grizzlies
+0.341,14,2010,20.8,2096760,2013,"Patrick Patterson","Sacramento Kings",0.341,14,2010,Medium,2096760,2013,Patrick Patterson,Sacramento Kings
+0.183,15,2010,19.5,1991760,2013,"Larry Sanders","Milwaukee Bucks",0.183,15,2010,Medium,1991760,2013,Larry Sanders,Milwaukee Bucks
+0.659,16,2010,14.0,1892280,2013,"Luke Babbitt","Portland Trail Blazers",0.659,16,2010,Medium,1892280,2013,Luke Babbitt,Portland Trail Blazers
+0.305,55,2010,10.5,1794872,2013,"Jeremy Evans","Utah Jazz",0.305,55,2010,Low,1794872,2013,Jeremy Evans,Utah Jazz
+0.305,19,2010,27.7,1630800,2013,"Avery Bradley","Boston Celtics",0.305,19,2010,High,1630800,2013,Avery Bradley,Boston Celtics
+0.659,22,2010,13.5,1442880,2013,"Elliot Williams","Portland Trail Blazers",0.659,22,2010,Medium,1442880,2013,Elliot Williams,Portland Trail Blazers
+0.232,21,2010, 7.1,1404960,2013,"Craig Brackins","Philadelphia 76ers",0.232,21,2010,Low,1404960,2013,Craig Brackins,Philadelphia 76ers
+0.598,25,2010, 9.3,1276560,2013,"Dominique Jones","Dallas Mavericks",0.598,25,2010,Low,1276560,2013,Dominique Jones,Dallas Mavericks
+0.610,26,2010,15.6,1234320,2013,"Quincy Pondexter","Memphis Grizzlies",0.610,26,2010,Medium,1234320,2013,Quincy Pondexter,Memphis Grizzlies
+0.537,27,2010,24.4,1198680,2013,"Jordan Crawford","Washington Wizards",0.537,27,2010,High,1198680,2013,Jordan Crawford,Washington Wizards
+0.402,52,2010,12.4,1054389,2013,"Luke Harangody","Cleveland Cavaliers",0.402,52,2010,Medium,1054389,2013,Luke Harangody,Cleveland Cavaliers
+0.720,29,2010,10.6, 916099,2013,"Daniel Orton","Oklahoma City Thunder",0.720,29,2010,Low, 916099,2013,Daniel Orton,Oklahoma City Thunder
+0.683,40,2010,23.1, 870000,2013,"Lance Stephenson","Indiana Pacers",0.683,40,2010,Medium, 870000,2013,Lance Stephenson,Indiana Pacers
+0.659,33,2010,25.1, 854389,2013,"Hassan Whiteside","Portland Trail Blazers",0.659,33,2010,High, 854389,2013,Hassan Whiteside,Portland Trail Blazers
+0.610,32,2010, 6.9, 854389,2013,"Dexter Pittman","Memphis Grizzlies",0.610,32,2010,Low, 854389,2013,Dexter Pittman,Memphis Grizzlies
+0.232,50,2010, 7.0, 830000,2013,"Solomon Alabi","Philadelphia 76ers",0.232,50,2010,Low, 830000,2013,Solomon Alabi,Philadelphia 76ers
+0.585,38,2010, 4.8, 788872,2013,"Andy Rautins","Toronto Raptors",0.585,38,2010,Low, 788872,2013,Andy Rautins,Toronto Raptors
+0.232,46,2010, 2.0, 788872,2013,"Gani Lawal","Philadelphia 76ers",0.232,46,2010,Low, 788872,2013,Gani Lawal,Philadelphia 76ers
+0.659,41,2010,10.7, 788872,2013,"Jarvis Varnado","Miami Heat",0.659,41,2010,Low, 788872,2013,Jarvis Varnado,Miami Heat
+0.463,53,2010, 7.0, 788872,2013,"Pape Sy","Atlanta Hawks",0.463,53,2010,Low, 788872,2013,Pape Sy,Atlanta Hawks
+0.183,37,2010, 7.8, 762195,2013,"Darington Hobson","Milwaukee Bucks",0.183,37,2010,Low, 762195,2013,Darington Hobson,Milwaukee Bucks
+0.329,58,2010, 5.2, 762195,2013,"Derrick Caracter","Los Angeles Lakers",0.329,58,2010,Low, 762195,2013,Derrick Caracter,Los Angeles Lakers
+0.415,44,2010, 7.6, 762195,2013,"Jerome Jordan","New Orleans Pelicans",0.415,44,2010,Low, 762195,2013,Jerome Jordan,New Orleans Pelicans
+0.488,30,2010, 8.2, 542788,2013,"Lazar Hayward","Minnesota Timberwolves",0.488,30,2010,Low, 542788,2013,Lazar Hayward,Minnesota Timberwolves
+0.756,20,2010,17.5, 532737,2013,"James Anderson","San Antonio Spurs",0.756,20,2010,Medium, 532737,2013,James Anderson,San Antonio Spurs
+0.720,57,2010, 3.4, 475000,2013,"Ryan Reid","Oklahoma City Thunder",0.720,57,2010,Low, 475000,2013,Ryan Reid,Oklahoma City Thunder
+0.537,34,2010, 8.5, 104494,2013,"Armon Johnson","Brooklyn Nets",0.537,34,2010,Low, 104494,2013,Armon Johnson,Brooklyn Nets
+0.537,24,2010,16.0,  68902,2013,"Damion James","Brooklyn Nets",0.537,24,2010,Medium,  68902,2013,Damion James,Brooklyn Nets
+0.646, 1,2011,33.9,5607240,2014,"Kyrie Irving","Cleveland Cavaliers",0.646, 1,2011,High,5607240,2014,Kyrie Irving,Cleveland Cavaliers
+0.354, 2,2011,20.7,5016960,2014,"Derrick Williams","Sacramento Kings",0.354, 2,2011,Medium,5016960,2014,Derrick Williams,Sacramento Kings
+0.646, 4,2011,27.1,4062000,2014,"Tristan Thompson","Cleveland Cavaliers",0.646, 4,2011,High,4062000,2014,Tristan Thompson,Cleveland Cavaliers
+0.220,50,2011,17.8,3060000,2014,"Lavoy Allen","Philadelphia 76ers",0.220,50,2011,Medium,3060000,2014,Lavoy Allen,Philadelphia 76ers
+0.500, 8,2011,29.4,2793960,2014,"Brandon Knight","Milwaukee Bucks",0.500, 8,2011,High,2793960,2014,Brandon Knight,Milwaukee Bucks
+0.817,11,2011,32.9,2317920,2014,"Klay Thompson","Golden State Warriors",0.817,11,2011,High,2317920,2014,Klay Thompson,Golden State Warriors
+0.463,12,2011,22.6,2202000,2014,"Alec Burks","Utah Jazz",0.463,12,2011,Medium,2202000,2014,Alec Burks,Utah Jazz
+0.476,13,2011,24.9,2091840,2014,"Markieff Morris","Phoenix Suns",0.476,13,2011,High,2091840,2014,Markieff Morris,Phoenix Suns
+0.671,15,2011,31.3,1887840,2014,"Kawhi Leonard","San Antonio Spurs",0.671,15,2011,High,1887840,2014,Kawhi Leonard,San Antonio Spurs
+0.207,17,2011,24.9,1703760,2014,"Iman Shumpert","New York Knicks",0.207,17,2011,High,1703760,2014,Iman Shumpert,New York Knicks
+0.561,18,2011,17.6,1618680,2014,"Chris Singleton","Washington Wizards",0.561,18,2011,Medium,1618680,2014,Chris Singleton,Washington Wizards
+0.305,19,2011,31.3,1545840,2014,"Tobias Harris","Orlando Magic",0.305,19,2011,High,1545840,2014,Tobias Harris,Orlando Magic
+0.366,22,2011,24.5,1367640,2014,"Kenneth Faried","Denver Nuggets",0.366,22,2011,High,1367640,2014,Kenneth Faried,Denver Nuggets
+0.549,24,2011,25.4,1260360,2014,"Reggie Jackson","Oklahoma City Thunder",0.549,24,2011,High,1260360,2014,Reggie Jackson,Oklahoma City Thunder
+0.256,25,2011,17.3,1210080,2014,"MarShon Brooks","Los Angeles Lakers",0.256,25,2011,Medium,1210080,2014,MarShon Brooks,Los Angeles Lakers
+0.683,26,2011,13.9,1169880,2014,"Jordan Hamilton","Houston Rockets",0.683,26,2011,Medium,1169880,2014,Jordan Hamilton,Houston Rockets
+0.451,28,2011,22.3,1129200,2014,"Norris Cole","Miami Heat",0.451,28,2011,Medium,1129200,2014,Norris Cole,Miami Heat
+0.671,29,2011,22.1,1120920,2014,"Cory Joseph","San Antonio Spurs",0.671,29,2011,Medium,1120920,2014,Cory Joseph,San Antonio Spurs
+0.610,30,2011,33.1,1112880,2014,"Jimmy Butler","Chicago Bulls",0.610,30,2011,High,1112880,2014,Jimmy Butler,Chicago Bulls
+0.390,33,2011,21.9,1045000,2014,"Kyle Singler","Detroit Pistons",0.390,33,2011,Medium,1045000,2014,Kyle Singler,Detroit Pistons
+0.683,38,2011,30.1, 926500,2014,"Chandler Parsons","Houston Rockets",0.683,38,2011,High, 926500,2014,Chandler Parsons,Houston Rockets
+0.671,40,2011,15.8, 900000,2014,"Jon Leuer","Memphis Grizzlies",0.671,40,2011,Medium, 900000,2014,Jon Leuer,Memphis Grizzlies
+0.732,34,2011,18.4, 884293,2014,"Shelvin Mack","Atlanta Hawks",0.732,34,2011,Medium, 884293,2014,Shelvin Mack,Atlanta Hawks
+0.390,45,2011,11.8, 884293,2014,"Josh Harrellson","Detroit Pistons",0.390,45,2011,Low, 884293,2014,Josh Harrellson,Detroit Pistons
+0.354,60,2011,28.8, 884293,2014,"Isaiah Thomas","Sacramento Kings",0.354,60,2011,High, 884293,2014,Isaiah Thomas,Sacramento Kings
+0.305,55,2011,21.0, 884293,2014,"E'Twaun Moore","Orlando Magic",0.305,55,2011,Medium, 884293,2014,E'Twaun Moore,Orlando Magic
+0.207,39,2011, 9.9, 556584,2014,"Jeremy Tyler","New York Knicks",0.207,39,2011,Low, 556584,2014,Jeremy Tyler,New York Knicks
+0.354,10,2011,13.3, 239279,2014,"Jimmer Fredette","Sacramento Kings",0.354,10,2011,Medium, 239279,2014,Jimmer Fredette,Sacramento Kings
+0.366, 1,2012,34.4,5607240,2015,"Anthony Davis","New Orleans Pelicans",0.366, 1,2012,High,5607240,2015,Anthony Davis,New Orleans Pelicans
+0.585, 2,2012,24.6,5016960,2015,"Michael Kidd-Gilchrist","Charlotte Hornets",0.585, 2,2012,High,5016960,2015,Michael Kidd-Gilchrist,Charlotte Hornets
+0.500,48,2012,15.8,4797664,2015,"Kostas Papanikolaou","Houston Rockets",0.500,48,2012,Medium,4797664,2015,Kostas Papanikolaou,Houston Rockets
+0.500, 3,2012,34.8,4505280,2015,"Bradley Beal","Washington Wizards",0.500, 3,2012,High,4505280,2015,Bradley Beal,Washington Wizards
+0.671, 4,2012,28.2,4062000,2015,"Dion Waiters","Oklahoma City Thunder",0.671, 4,2012,High,4062000,2015,Dion Waiters,Oklahoma City Thunder
+0.537, 5,2012,13.4,3678360,2015,"Thomas Robinson","Portland Trail Blazers",0.537, 5,2012,Medium,3678360,2015,Thomas Robinson,Portland Trail Blazers
+0.537, 6,2012,36.3,3340920,2015,"Damian Lillard","Portland Trail Blazers",0.537, 6,2012,Very High,3340920,2015,Damian Lillard,Portland Trail Blazers
+0.585,43,2012,16.5,3333333,2015,"Mike Scott","Atlanta Hawks",0.585,43,2012,Medium,3333333,2015,Mike Scott,Atlanta Hawks
+0.890, 7,2012,31.8,3049920,2015,"Harrison Barnes","Golden State Warriors",0.890, 7,2012,High,3049920,2015,Harrison Barnes,Golden State Warriors
+0.122,53,2012,13.2,2963232,2015,"Furkan Aldemir","Philadelphia 76ers",0.122,53,2012,Medium,2963232,2015,Furkan Aldemir,Philadelphia 76ers
+0.683, 8,2012,24.9,2793960,2015,"Terrence Ross","Toronto Raptors",0.683, 8,2012,High,2793960,2015,Terrence Ross,Toronto Raptors
+0.537, 9,2012,29.8,2568360,2015,"Andre Drummond","Detroit Pistons",0.537, 9,2012,High,2568360,2015,Andre Drummond,Detroit Pistons
+0.537,11,2012,16.0,2317920,2015,"Meyers Leonard","Portland Trail Blazers",0.537,11,2012,Medium,2317920,2015,Meyers Leonard,Portland Trail Blazers
+0.671,12,2012,20.8,2202000,2015,"Jeremy Lamb","Oklahoma City Thunder",0.671,12,2012,Medium,2202000,2015,Jeremy Lamb,Oklahoma City Thunder
+0.402,14,2012,19.7,1987320,2015,"John Henson","Milwaukee Bucks",0.402,14,2012,Medium,1987320,2015,John Henson,Milwaukee Bucks
+0.427,15,2012,22.7,1887840,2015,"Maurice Harkless","Orlando Magic",0.427,15,2012,Medium,1887840,2015,Maurice Harkless,Orlando Magic
+0.585,17,2012,17.5,1703760,2015,"Tyler Zeller","Boston Celtics",0.585,17,2012,Medium,1703760,2015,Tyler Zeller,Boston Celtics
+0.500,18,2012,23.8,1618680,2015,"Terrence Jones","Houston Rockets",0.500,18,2012,Medium,1618680,2015,Terrence Jones,Houston Rockets
+0.427,19,2012,14.3,1545840,2015,"Andrew Nicholson","Orlando Magic",0.427,19,2012,Medium,1545840,2015,Andrew Nicholson,Orlando Magic
+0.427,20,2012,28.6,1483920,2015,"Evan Fournier","Orlando Magic",0.427,20,2012,High,1483920,2015,Evan Fournier,Orlando Magic
+0.585,21,2012,24.3,1424520,2015,"Jared Sullinger","Boston Celtics",0.585,21,2012,High,1424520,2015,Jared Sullinger,Boston Celtics
+0.585,23,2012,12.8,1312920,2015,"John Jenkins","Atlanta Hawks",0.585,23,2012,Medium,1312920,2015,John Jenkins,Atlanta Hawks
+0.122,25,2012,21.2,1210080,2015,"Tony Wroten","Philadelphia 76ers",0.122,25,2012,Medium,1210080,2015,Tony Wroten,Philadelphia 76ers
+0.280,26,2012,16.4,1169880,2015,"Miles Plumlee","Phoenix Suns",0.280,26,2012,Medium,1169880,2015,Miles Plumlee,Phoenix Suns
+0.671,28,2012,11.7,1129200,2015,"Perry Jones","Oklahoma City Thunder",0.671,28,2012,Low,1129200,2015,Perry Jones,Oklahoma City Thunder
+0.512,29,2012,10.0,1120920,2015,"Marquis Teague","Memphis Grizzlies",0.512,29,2012,Low,1120920,2015,Marquis Teague,Memphis Grizzlies
+0.890,30,2012,14.1,1112880,2015,"Festus Ezeli","Golden State Warriors",0.890,30,2012,Medium,1112880,2015,Festus Ezeli,Golden State Warriors
+0.427,49,2012,14.2, 915243,2015,"Kyle O'Quinn","Orlando Magic",0.427,49,2012,Medium, 915243,2015,Kyle O'Quinn,Orlando Magic
+0.402,39,2012,31.7, 915243,2015,"Khris Middleton","Milwaukee Bucks",0.402,39,2012,High, 915243,2015,Khris Middleton,Milwaukee Bucks
+0.402,13,2012,19.3, 915243,2015,"Kendall Marshall","Milwaukee Bucks",0.402,13,2012,Medium, 915243,2015,Kendall Marshall,Milwaukee Bucks
+0.512,34,2012,25.2, 915243,2015,"Jae Crowder","Dallas Mavericks",0.512,34,2012,High, 915243,2015,Jae Crowder,Dallas Mavericks
+0.890,35,2012,28.5, 915243,2015,"Draymond Green","Golden State Warriors",0.890,35,2012,High, 915243,2015,Draymond Green,Golden State Warriors
+0.537,40,2012,25.7, 915243,2015,"Will Barton","Portland Trail Blazers",0.537,40,2012,High, 915243,2015,Will Barton,Portland Trail Blazers
+0.512,42,2012,12.7, 915243,2015,"Doron Lamb","Dallas Mavericks",0.512,42,2012,Medium, 915243,2015,Doron Lamb,Dallas Mavericks
+0.207,60,2012,14.5, 915243,2015,"Robert Sacre","Los Angeles Lakers",0.207,60,2012,Medium, 915243,2015,Robert Sacre,Los Angeles Lakers
+0.366,46,2012,19.8, 915243,2015,"Darius Miller","New Orleans Pelicans",0.366,46,2012,Medium, 915243,2015,Darius Miller,New Orleans Pelicans
+0.354,58,2012,14.3, 880000,2015,"Robbie Hummel","Minnesota Timberwolves",0.354,58,2012,Medium, 880000,2015,Robbie Hummel,Minnesota Timberwolves
+0.354,45,2012,17.4, 816482,2015,"Justin Hamilton","Minnesota Timberwolves",0.354,45,2012,Medium, 816482,2015,Justin Hamilton,Minnesota Timberwolves
+0.512,33,2012, 8.3, 236886,2015,"Bernard James","Dallas Mavericks",0.512,33,2012,Low, 236886,2015,Bernard James,Dallas Mavericks
+0.402,38,2012,13.5, 183049,2015,"Quincy Miller","Sacramento Kings",0.402,38,2012,Medium, 183049,2015,Quincy Miller,Sacramento Kings
+0.391, 2,2013,33.0,5192520,2016,"Victor Oladipo","Orlando Magic",0.391, 2,2013,High,5192520,2016,Victor Oladipo,Orlando Magic
+0.535, 3,2013,26.0,4662960,2016,"Otto Porter Jr.","Washington Wizards",0.535, 3,2013,High,4662960,2016,Otto Porter Jr.,Washington Wizards
+0.512, 4,2013,22.2,4204200,2016,"Cody Zeller","Charlotte Hornets",0.512, 4,2013,Medium,4204200,2016,Cody Zeller,Charlotte Hornets
+0.341, 5,2013,19.0,3807120,2016,"Alex Len","Phoenix Suns",0.341, 5,2013,Medium,3807120,2016,Alex Len,Phoenix Suns
+0.357, 6,2013,22.4,3457800,2016,"Nerlens Noel","Philadelphia 76ers",0.357, 6,2013,Medium,3457800,2016,Nerlens Noel,Philadelphia 76ers
+0.372, 7,2013,22.5,3156600,2016,"Ben McLemore","Sacramento Kings",0.372, 7,2013,Medium,3156600,2016,Ben McLemore,Sacramento Kings
+0.467, 8,2013,29.1,2891760,2016,"Kentavious Caldwell-Pope","Detroit Pistons",0.467, 8,2013,High,2891760,2016,Kentavious Caldwell-Pope,Detroit Pistons
+0.644, 9,2013,21.1,2658240,2016,"Trey Burke","Utah Jazz",0.644, 9,2013,Medium,2658240,2016,Trey Burke,Utah Jazz
+0.413,10,2013,31.5,2525160,2016,"CJ McCollum","Portland Trail Blazers",0.413,10,2013,High,2525160,2016,CJ McCollum,Portland Trail Blazers
+0.465,11,2013,25.3,2399040,2016,"Michael Carter-Williams","Milwaukee Bucks",0.465,11,2013,High,2399040,2016,Michael Carter-Williams,Milwaukee Bucks
+0.568,12,2013,26.8,2279040,2016,"Steven Adams","Oklahoma City Thunder",0.568,12,2013,High,2279040,2016,Steven Adams,Oklahoma City Thunder
+0.625,13,2013,22.1,2165160,2016,"Kelly Olynyk","Boston Celtics",0.625,13,2013,Medium,2165160,2016,Kelly Olynyk,Boston Celtics
+0.364,14,2013,17.2,2056920,2016,"Shabazz Muhammad","Minnesota Timberwolves",0.364,14,2013,Medium,2056920,2016,Shabazz Muhammad,Minnesota Timberwolves
+0.465,15,2013,32.5,1953960,2016,"Giannis Antetokounmpo","Milwaukee Bucks",0.465,15,2013,High,1953960,2016,Giannis Antetokounmpo,Milwaukee Bucks
+0.636,16,2013,12.4,1842000,2016,"Lucas Nogueira","Toronto Raptors",0.636,16,2013,Medium,1842000,2016,Lucas Nogueira,Toronto Raptors
+0.333,48,2013,19.2,1724250,2016,"Ryan Kelly","Los Angeles Lakers",0.333,48,2013,Medium,1724250,2016,Ryan Kelly,Los Angeles Lakers
+0.419,55,2013,13.6,1709719,2016,"Joffrey Lauvergne","Denver Nuggets",0.419,55,2013,Medium,1709719,2016,Joffrey Lauvergne,Denver Nuggets
+0.214,19,2013,11.7,1599840,2016,"Sergey Karasev","Brooklyn Nets",0.214,19,2013,Low,1599840,2016,Sergey Karasev,Brooklyn Nets
+0.477,20,2013,21.9,1535880,2016,"Tony Snell","Chicago Bulls",0.477,20,2013,Medium,1535880,2016,Tony Snell,Chicago Bulls
+0.214,18,2013,19.1,1500000,2016,"Shane Larkin","Brooklyn Nets",0.214,18,2013,Medium,1500000,2016,Shane Larkin,Brooklyn Nets
+0.364,21,2013,20.7,1474440,2016,"Gorgui Dieng","Minnesota Timberwolves",0.364,21,2013,Medium,1474440,2016,Gorgui Dieng,Minnesota Timberwolves
+0.413,22,2013,22.3,1415520,2016,"Mason Plumlee","Portland Trail Blazers",0.413,22,2013,Medium,1415520,2016,Mason Plumlee,Portland Trail Blazers
+0.512,23,2013,21.5,1358880,2016,"Solomon Hill","Indiana Pacers",0.512,23,2013,Medium,1358880,2016,Solomon Hill,Indiana Pacers
+0.575,24,2013,27.0,1304520,2016,"Tim Hardaway Jr.","Atlanta Hawks",0.575,24,2013,High,1304520,2016,Tim Hardaway Jr.,Atlanta Hawks
+0.467,25,2013,22.0,1252440,2016,"Reggie Bullock","Detroit Pistons",0.467,25,2013,Medium,1252440,2016,Reggie Bullock,Detroit Pistons
+0.568,26,2013,22.2,1210800,2016,"Andre Roberson","Oklahoma City Thunder",0.568,26,2013,Medium,1210800,2016,Andre Roberson,Oklahoma City Thunder
+0.644,27,2013,29.9,1175880,2016,"Rudy Gobert","Utah Jazz",0.644,27,2013,High,1175880,2016,Rudy Gobert,Utah Jazz
+0.341,29,2013,14.5,1160160,2016,"Archie Goodwin","Phoenix Suns",0.341,29,2013,Medium,1160160,2016,Archie Goodwin,Phoenix Suns
+0.575,44,2013,15.5, 947276,2016,"Mike Muscala","Atlanta Hawks",0.575,44,2013,Medium, 947276,2016,Mike Muscala,Atlanta Hawks
+0.413,40,2013, 6.4, 947276,2016,"Grant Jerrett","Portland Trail Blazers",0.413,40,2013,Low, 947276,2016,Grant Jerrett,Portland Trail Blazers
+0.413,31,2013,24.0, 947276,2016,"Allen Crabbe","Portland Trail Blazers",0.413,31,2013,Medium, 947276,2016,Allen Crabbe,Portland Trail Blazers
+0.357,34,2013,20.4, 947276,2016,"Isaiah Canaan","Philadelphia 76ers",0.357,34,2013,Medium, 947276,2016,Isaiah Canaan,Philadelphia 76ers
+0.636, 1,2013,12.6, 947276,2016,"Anthony Bennett","Toronto Raptors",0.636, 1,2013,Medium, 947276,2016,Anthony Bennett,Toronto Raptors
+0.419,41,2013, 7.3, 947276,2016,"Jamaal Franklin","Denver Nuggets",0.419,41,2013,Low, 947276,2016,Jamaal Franklin,Denver Nuggets
+0.644,39,2013,10.1, 947276,2016,"Jeff Withey","Utah Jazz",0.644,39,2013,Low, 947276,2016,Jeff Withey,Utah Jazz
+0.644,47,2013,16.1, 900000,2016,"Raul Neto","Utah Jazz",0.644,47,2013,Medium, 900000,2016,Raul Neto,Utah Jazz
+0.565,50,2013,20.3, 845059,2016,"James Ennis III","Memphis Grizzlies",0.565,50,2013,Medium, 845059,2016,James Ennis III,Memphis Grizzlies
+0.341,42,2013,10.5, 525093,2016,"Pierre Jackson","Dallas Mavericks",0.341,42,2013,Low, 525093,2016,Pierre Jackson,Dallas Mavericks
+0.341,52,2013,11.5, 111444,2016,"Lorenzo Brown","Phoenix Suns",0.341,52,2013,Low, 111444,2016,Lorenzo Brown,Phoenix Suns
+0.644,46,2013, 8.7,  99418,2016,"Erick Green","Utah Jazz",0.644,46,2013,Low,  99418,2016,Erick Green,Utah Jazz
