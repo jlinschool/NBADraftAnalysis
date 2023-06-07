@@ -1,0 +1,401 @@
+---
+title: "ProjectClean"
+author: "Jonathan Lin"
+date: "2022-12-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Clean version of the project markdown that we are using
+
+loading the data and packages in
+```{r}
+# libraries necessary
+library(tidyverse)
+library(plotly)
+
+#  creating the finalDataset1
+finalDataset1 <- draftAndSalaryAndStandings2 %>%
+  dplyr::select(Winning.Percentage, Pk, DraftYr, MPG, salary, season, name, team)
+row.has.na <- apply(finalDataset1, 1, function(x){any(is.na(x))})
+sum(row.has.na)
+finalDataset1 <- finalDataset1[!row.has.na,]
+
+# making the MPGcat variable
+finalDataset1$MPGcat <- finalDataset1 %>%
+  mutate(MPG = cut(MPG,
+                    breaks = c(0, 12, 24, 36, Inf),
+                    labels = c("Low", "Medium", "High", 
+                               "Very High")))
+
+# filtering for the correct draft years
+finalDataset1 <- finalDataset1 %>%
+  dplyr::filter(season == DraftYr + 3)
+
+# creating the new dataset with + 1 for each draft pick 
+newDataset <- finalDataset1
+newDataset$Pk <- finalDataset1$Pk + 1
+```
+
+defining the function that we will use in our regression (WE ARE NOT USING THIS CHECK LM down BELOW)
+```{r}
+# square distance function for additive model
+sqdist <- function(a, b) {
+  (a$Pk - b$Pk)^2/60^2 + (a$MPG - b$MPG)^2/48^2 + (a$Winning.Percentage - b$Winning.Percentage)^2
+}
+# square distance function for just the pick regression
+sqdistPK <- function(a, b) {
+  (a$Pk - b$Pk)^2/60^2
+}
+# predict.local function for weighted additive model that predicts onto a new dataframe
+predict.local = function(grid, dataset) {
+  mu.hat.local = rep(NA, nrow(grid))
+  for(ii in 1:nrow(grid)) { 
+    row = grid[ii, ]
+    w = exp(-(sqdist(row, dataset)/2))
+    model = lm(salary ~ Pk + MPG + Winning.Percentage, weights=w, data=dataset)
+    mu.hat.local[ii] = predict(model, newdata=row)
+  }
+  mu.hat.local
+}
+# predict function for a regression using just the draft pick with same weights and just the draft pick as the covariate
+predict.localDP = function(grid, dataset) {
+  mu.hat.local = rep(NA, nrow(grid))
+  for(ii in 1:nrow(grid)) { 
+    row = grid[ii, ]
+    w = exp(-(sqdistPK(row, dataset)/2))
+    model = lm(salary ~ Pk + Winning.Percentage + MPG, weights=w, data=dataset)
+    mu.hat.local[ii] = predict(model, newdata=row)
+  }
+  mu.hat.local
+}
+
+```
+
+first estimate (only run this if you want the first estimate)
+```{r}
+# creating the average difference and then graphing it 
+ATE2 <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  mean(predict(model, grid2) - predict(model, grid3))
+}))
+
+ATEvec2 <- as.vector(ATE2)
+AverageDifference <- unlist(ATEvec2)
+ggplot() + geom_point(aes(x = 1:60, y = AverageDifference))
+```
+
+Creating the fake data
+```{r}
+# creating the fakedata and generating random salaries for each threshold of winnning percentage vs mpg and pick
+fakeData1 <- finalDataset1
+
+fakeData1$PCTCat <- fakeData1$Winning.Percentage
+
+fakeData1 <- fakeData1 %>%
+  mutate(PCTCat = cut(PCTCat, 
+                      breaks = c(0, 0.5, 1),
+                      labels = c("Below", "Above")))
+
+fakeData1$MPGCat <- as.numeric(fakeData1$MPG)
+
+fakeData1 <- fakeData1 %>%
+  mutate(MPGCat = cut(MPGCat, 
+                   breaks = c(0, 16, 32, 48), 
+                   labels = c("Low", "Medium", "High")))
+
+goodhigh <- fakeData1$Winning.Percentage >= 0.5 & fakeData1$MPGCat == "High"
+goodmedium <- fakeData1$Winning.Percentage >= 0.5 & fakeData1$MPGCat == "Medium"
+goodlow <- fakeData1$Winning.Percentage >= 0.5 & fakeData1$MPGCat == "Low"
+badhigh <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "High"
+badmedium <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Medium"
+badlow <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Low"
+         
+Coverage = data.frame(
+  mu = c(1:100),
+  bin = c("I")
+)
+view(Coverage)
+epsiloni = rnorm(500)
+epsiloni
+for (j in 1:100) {
+  salaryRandom <- function(x, row) {
+  if (x[row,]$MPG <= 16) {
+    1000000 * (2 - (1:61)/61)
+  } else if (x[row,]$MPG <= 32 & x[row,]$MPG > 16) {
+    2000000 * (2 - (1:61)/61)
+  } else if (x[row,]$MPG <= 48 & x[row,]$MPG > 32) {
+    3000000 * (2 - (1:61)/61)
+  }
+  }
+  range <- function(x, row) {
+  if (x[row,]$PCTCat == "Above") {
+    2 * (1.1 - (1:61)/61)
+  } else if (x[row,]$PCTCat == "Below") {
+    1 * (1.1 - (1:61)/61)
+  }
+  }
+  potentialSalary = array(dim = c(500, 61)) 
+  for (i in 1:500) {
+  mu = salaryRandom(fakeData1, i)
+  r = range(fakeData1, i)/2
+  potentialSalary[i,] = runif(61, min = mu - r, max = mu + r)
+  }
+  probabilityPick <- function(x, row) {
+  numerator = (1 + x[row,]$MPG/(1:61))
+  denominator = sum(numerator)
+  numerator / denominator
+  }
+  for (i in 1:500) {
+  probs = probabilityPick(fakeData1, i)
+  fakeData1[i,]$Pk = sample(1:61, 1, replace = T, prob = probs)
+  }
+  fakeData1$salary = 1
+  fakeData1$salaryPick1 = 1
+  for (i in 1:500) {
+  fakeData1[i,]$salary = potentialSalary[i, fakeData1[i,]$Pk]
+  fakeData1[i,]$salaryPick1 = potentialSalary[i, min(fakeData1[i,]$Pk + 1, 60)]
+  }
+  mu = mean(fakeData1$salary - fakeData1$salaryPick1) 
+  Coverage[j,]$mu = mu
+  sigma.hat = array(0, dim=c(6,6))
+  for (i in 1:500) {
+  phi2 = phi(fakeData1$MPG, fakeData1$Winning.Percentage, fakeData1$Pk, fakeData1$Pk*fakeData1$Winning.Percentage, fakeData1$Pk*fakeData1$MPG)
+  sigma.hat = sigma.hat + phi2 %*% t(phi2)/500
+  }
+  sigma.hat.inv = solve(sigma.hat)
+  epsilon.hat = fakeData1$salary - predict(modelFake, newdata=fakeData1)
+  sigma.hat.w = array(0, dim=c(6,6))
+  for (i in 1:500) {
+  phi2 = phi(fakeData1$MPG, fakeData1$Winning.Percentage, fakeData1$Pk, fakeData1$Pk*fakeData1$Winning.Percentage, fakeData1$Pk*fakeData1$MPG)
+  sigma.hat.w = sigma.hat.w + epsilon.hat[i]^2 * phi2 %*% t(phi2)/500
+  }
+  V = sigma.hat.inv %*% sigma.hat.w %*% sigma.hat.inv
+  newFakeData1 <- fakeData1
+  newFakeData1$Pk <- newFakeData1$Pk + 1
+  u <- rowMeans(phi(fakeData1$MPG, fakeData1$Winning.Percentage, fakeData1$Pk, fakeData1$Pk*fakeData1$Winning.Percentage, fakeData1$Pk*fakeData1$MPG) - phi(newFakeData1$MPG, newFakeData1$Winning.Percentage, newFakeData1$Pk, newFakeData1$Pk*newFakeData1$Winning.Percentage, newFakeData1$Pk*newFakeData1$MPG))
+  sigma.hat.u = sqrt(t(u) %*% V %*% u / 500)
+  target = target2(muhat)
+  if (mu >= target - 2*sigma.hat.u & mu <= target + 2*sigma.hat.u) {
+    Coverage[j,]$bin = "Yes"
+  } else {
+    Coverage[j,]$bin = "No"
+  }
+}
+view(Coverage)
+ggplot(data = Coverage) + 
+  geom_bar(aes(x = bin)) + 
+  labs(x = "Coverage", y = "Frequency")
+
+modelFake = lm(salary ~ Pk + MPG + Winning.Percentage + Pk:Winning.Percentage + Pk:MPG, data=fakeData1)
+ATEFake = mean(predict(modelFake, fakeData1) - predict(modelFake, newFakeData1))
+ATEFake
+coef(modelFake)
+betahatFake = c(coef(modelFake))
+betahatFake
+# int, Pk, MPG, Winning.Percentage, Pk:WP, Pk:MPG
+
+newFakeData1 <- fakeData1
+newFakeData1$Pk <- newFakeData1$Pk + 1
+```
+
+Confidence interval for regular data
+```{r}
+# model using continuous variables 
+set.seed(1)
+model = lm(salary ~ Pk + MPG + Winning.Percentage + Pk:Winning.Percentage + Pk:MPG, data=finalDataset1)
+coef(model)
+
+# assigning the coefficients based on model estimation
+betahat <- c(705832.737, 19432.653, 80920.621, 414297.286, -40408.833, -1736.515)
+
+# phi function as a function of our features
+phi <- function(MPG, Winning.Percentage, Pk, Int1, Int2) {
+  rbind(1, Pk, MPG, Winning.Percentage, Pk*Winning.Percentage, Pk*MPG)
+}
+# int, Pk, MPG, Winning.Percentage, Pk:WP, Pk:MPG
+
+phi1 <- phi(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG)
+
+# mu function as a function of our features
+muhat = function(MPG, Winning.Percentage, Pk, Int1, Int2) {
+  t(phi(MPG, Winning.Percentage, Pk, Int1, Int2)) %*% betahatFake
+}
+mu1 <- muhat(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG)
+mu2 <- muhat(fakeData1$MPG, fakeData1$Winning.Percentage, fakeData1$Pk, fakeData1$Pk*fakeData1$Winning.Percentage, fakeData1$Pk*fakeData1$MPG)
+view(mu1)
+view(mu2)
+
+# this is what we're going to use to calculate the target
+target <- function(m) {
+  mean(m(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG) - m(newDataset$MPG, newDataset$Winning.Percentage, newDataset$Pk, newDataset$Pk*newDataset$Winning.Percentage, newDataset$Pk*newDataset$MPG))
+}
+target2 <- function(m) {
+   mean(m(fakeData1$MPG, fakeData1$Winning.Percentage, fakeData1$Pk, fakeData1$Pk*fakeData1$Winning.Percentage, fakeData1$Pk*fakeData1$MPG) - m(newFakeData1$MPG, newFakeData1$Winning.Percentage, newFakeData1$Pk, newFakeData1$Pk*newFakeData1$Winning.Percentage, newFakeData1$Pk*newFakeData1$MPG))
+}
+# int, Pk, MPG, Winning.Percentage, Pk:WP, Pk:MPG
+
+
+target(muhat)
+# sigma = function(x) { 1/(1+abs(x)) } dont use this!
+
+# sigma.hat
+sigma.hat = array(0, dim=c(6,6))
+for (i in 1:500) {
+  phi1 = phi(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG)
+  sigma.hat = sigma.hat + phi1 %*% t(phi1)/500
+}
+sigma.hat.inv = solve(sigma.hat)
+
+# sigma.hat.w
+epsilon.hat = finalDataset1$salary - predict(model, newdata=finalDataset1) 
+sigma.hat.w = array(0, dim=c(6,6))
+for (i in 1:500) {
+  phi1 = phi(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG)
+  sigma.hat.w = sigma.hat.w + epsilon.hat[i]^2 * phi1 %*% t(phi1)/500
+}
+
+# V
+V = sigma.hat.inv %*% sigma.hat.w %*% sigma.hat.inv
+V
+
+# sigma.hat.u
+u <- rowMeans(phi(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk, finalDataset1$Pk*finalDataset1$Winning.Percentage, finalDataset1$Pk*finalDataset1$MPG) - phi(newDataset$MPG, newDataset$Winning.Percentage, newDataset$Pk, newDataset$Pk*newDataset$Winning.Percentage, newDataset$Pk*newDataset$MPG))
+
+view(u)
+sigma.hat.u = sqrt(t(u) %*% V %*% u / 500)
+sigma.hat.u
+
+target(mu)
+
+sum(is.na(u))
+sum(is.na(V))
+
+# confidence interval 
+muhat.CI = target(muhat)
+muhat.CI
+
+a = ATE - 2*sigma.hat.u
+b = ATE + 2*sigma.hat.u
+
+a
+b
+# why is this different than our estimate based off of our regression?
+```
+
+testing interval for fake data
+```{r}
+Y = c(1:500)
+epsiloni = rnorm(500)
+mu <- function(Pk, MPG, WP) {
+  Pk + MPG*Winning.Percentage
+}
+
+Y = c(1:500)
+for (i in 1:500) {
+Y[i,] = mu(fakeData1[i,]$Pk, fakeData1[i,]$MPG, fakeData1[i]$Winning.Percentage) + epsilon[i,]
+}
+
+
+```
+
+second estimate (one we are using for draft + 1)
+```{r}
+# estimate using the original dataset
+#ATE <- data.frame(lapply(1, function(p) {
+  #mean(predict.localDP(finalDataset1, finalDataset1) - #predict.localDP(newDataset, finalDataset1))
+#}))
+
+# new estimate using our interactive model
+ATE <- mean(predict(model, finalDataset1) - predict(model, newDataset))
+ATE
+
+# estimate using the fakedataset generated with assumptions
+#ATEFake <- data.frame(lapply(1, function(p) {
+  #mean(predict.localDP(fakeData1, finalDataset1) - #predict.localDP(newFakeData1, finalDataset1))
+#}))
+ATEFake <- mean(predict(modelFake, fakeData1) - predict(modelFake, newFakeData1))
+ATEFake
+
+ATEGraph <- data.frame(lapply(1, function(p) {
+  predict(model, finalDataset1) - predict(model, newDataset)
+}))
+
+
+ATEFakeGraph <- data.frame(lapply(1, function(p) {
+  predict(modelFake, fakeData1) - predict(modelFake, newFakeData1)
+}))
+
+ATEvec <- as.vector(ATEGraph)
+ATEvec <- unlist(ATEvec)
+ATEvecFake <- as.vector(ATEFakeGraph)
+ATEvecFake <- unlist(ATEFakeGraph)
+
+plot1 <- ggplot() + 
+  geom_point(aes(x = 1:500, y = ATEvec, color = "red"), show.legend = FALSE) + 
+  geom_point(aes(x = 1:500, y = ATEvecFake, color = "blue"), show.legend = FALSE) + 
+  labs(x = "Players", y = "Difference in Salary")
+  #geom_line(aes(x, y = ATE, color = "red")) +
+  #geom_line(aes(x, y = ATEFake, color = "blue"))
+plot1
+```
+
+Generating more figures
+```{r}
+plot2 <- ggplot() + 
+  geom_point(aes(group = finalDataset1$Pk, x = finalDataset1$Pk, y = finalDataset1$salary)) + 
+  labs(color = "Pick", x = "Pick", y = "Salary", title = "Real Data")
+plot2
+
+plot3 <- ggplot() +
+  geom_point(aes(group = fakeData1$Pk, x = fakeData1$Pk, y = fakeData1$salary, color = fakeData1$Pk)) + 
+  labs(color = "Pick", x = "Pick", y = "Salary", title = "Generated Data")
+plot3
+
+plot4 <- ggplot() + 
+  geom_boxplot(aes(group = finalDataset1$Pk, x = finalDataset1$Pk, y = finalDataset1$salary - fakeData1$salary)) +
+  labs(x = "Pick Number", y = "Salary Difference between Real - Generated Data")
+plot4
+
+# boxplot of the salary of final data set grouped by pick
+plot5 <- ggplot() + 
+  geom_boxplot(aes(group = finalDataset1$Pk, x = finalDataset1$Pk, y = finalDataset1$salary)) + 
+  labs(x = "Pick", y = "Salary")
+plot5
+
+plot6 <- ggplot() + 
+  geom_boxplot(aes(group = fakeData1$Pk, x = fakeData1$Pk, y = fakeData1$salary)) +
+  labs(x = "Pick", y = "Salary")
+plot6
+
+finalDataset1$Predict = ATEvec
+finalDataset1$Predict
+fakeData1$Predict = ATEvecFake
+fakeData1$Predict
+
+# predicted difference between draft pick and salary
+plot7 <- ggplot() + 
+  geom_boxplot(aes(group = finalDataset1$Pk, x = finalDataset1$Pk, y = finalDataset1$Predict)) + 
+  labs(x = "Pick", y = "Difference")
+plot7
+
+plot8 <- ggplot() + 
+  geom_boxplot(aes(group = fakeData1$Pk, x = fakeData1$Pk, y = fakeData1$Predict)) + 
+  labs(x = "Pick", y = "Difference")
+plot8
+
+# linear model on top of data
+plot9 <- ggplot() + 
+  geom_point(aes(group = finalDataset1$Pk, x = finalDataset1$Pk, y = finalDataset1$salary)) + 
+  geom_point(color = "red", data = predicted_df, aes(group = finalDataset1$Pk, x = Pick, y = salary_pred)) + 
+  labs(x = "Pick", y = "Salary")
+plot9
+
+predicted_df <- data.frame(salary_pred = predict(model, finalDataset1), Pick = finalDataset1$Pk)
+
+predicted_df2 <- data.frame(salary_pred = phi1)
+```

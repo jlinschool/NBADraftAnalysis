@@ -1,0 +1,353 @@
+---
+title: "ProjectMarkdown"
+author: "Jonathan Lin"
+date: "2022-10-26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## loading packages
+
+```{r}
+library(tidyverse)
+library(plotly)
+library(readr)
+library(data.table)
+library(writexl)
+library(fastDummies)
+```
+
+## loading datasets
+
+```{r}
+season_data <- read.csv("/Users/ljon4/Downloads/archive/Seasons_Stats.csv")
+draft_data <- read.csv("/Users/ljon4/Downloads/archive2/draft-data-20-years.csv")
+standings_data <- read.csv("/Users/ljon4/Downloads/Historical NBA Performance.csv")
+salary_data <- read.csv("https://raw.githubusercontent.com/erikgregorywebb/datasets/master/nba-salaries.csv")
+```
+
+## creating final dataset
+
+```{r}
+finalDataset1 <- draftAndSalaryAndStandings2 %>%
+  dplyr::select(Winning.Percentage, Pk, DraftYr, MPG, salary, season, name, team)
+row.has.na <- apply(finalDataset1, 1, function(x){any(is.na(x))})
+sum(row.has.na)
+finalDataset1 <- finalDataset1[!row.has.na,]
+```
+
+## coding categorical values for MPG and coding for second contract
+
+```{r}
+finalDataset1$MPGcat <- finalDataset1 %>%
+  mutate(MPG = cut(MPG,
+                    breaks = c(0, 12, 24, 36, Inf),
+                    labels = c("Low", "Medium", "High", 
+                               "Very High")))
+
+finalDataset1 <- finalDataset1 %>%
+  dplyr::filter(season == DraftYr + 3)
+```
+
+## sqdist function
+
+```{r}
+sqdist <- function(a, b) {
+  (a$Pk - b$Pk)^2/60^2 + (a$MPG - b$MPG)^2/48^2 + (a$Winning.Percentage - b$Winning.Percentage)^2
+}
+sqdistPK <- function(a, b) {
+  (a$Pk - b$Pk)^2/60^2
+}
+```
+
+## additive model for local regression
+
+```{r}
+
+predict.local = function(grid, dataset) {
+  mu.hat.local = rep(NA, nrow(grid))
+  
+  for(ii in 1:nrow(grid)) { 
+    row = grid[ii, ]
+    w = exp(-(sqdist(row, dataset)/2))
+    model = lm(salary ~ Pk + cut(MPG,
+                    breaks = c(0, 12, 24, 36, Inf),
+                    labels = c("Low", "Medium", "High", 
+                               "Very High")) + Winning.Percentage, weights=w, data=dataset)
+    
+    mu.hat.local[ii] = predict(model, newdata=row)
+  }
+  mu.hat.local
+}
+
+predict.localDP = function(grid, dataset) {
+  mu.hat.local = rep(NA, nrow(grid))
+  for(ii in 1:nrow(grid)) { 
+    row = grid[ii, ]
+    w = exp(-(sqdistPK(row, dataset)/2))
+    model = lm(salary ~ Pk, weights=w, data=dataset)
+    mu.hat.local[ii] = predict(model, newdata=row)
+  }
+  mu.hat.local
+}
+
+```
+
+## grids used to make dummy data
+
+```{r}
+grid <- expand.grid(Pk=1:60, MPG=seq(0, 48, by = 12), Winning.Percentage=seq(0, 1, by = 0.25))
+
+grid$mu.hat.local <- predict.local(grid, finalDataset1) ## no factor variables taken by this arg
+grid$mu.hat.local
+```
+
+## ATE difference
+
+```{r}
+ATE <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  mean(predict.local(grid2, finalDataset1) - predict.local(grid3, finalDataset1))
+  # mean(predict.local(grid3, finalDataset1))
+}))
+
+ATE2 <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  mean(predict.local(grid2, finalDataset1) - predict.local(grid3, finalDataset1))
+}))
+ATE3 <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  # mean(predict.local(grid2, finalDataset1) - predict.local(grid3, finalDataset1))
+  # mean(predict.local(grid2, finalDataset1))
+  mean(predict.local(grid3, finalDataset1))
+}))
+
+
+## ATE gives you difference between WP = 0.75 and 0.25 at 48 different levels of MPG and 60 different levels of pick
+## averages 48 different MPG thresholds for each pick in terms of difference in salary based on Winning percentage
+ATE
+ATEvec <- as.vector(ATE)
+AverageDifference <- unlist(ATEvec)
+ggplot() + geom_point(aes(x = 1:60, y = AverageDifference))
+
+ATEvec3 <- as.vector(ATE2)
+AverageSalaryHigh <- unlist(ATEvec3)
+ggplot() + geom_point(aes(x = 1:60, y = AverageSalaryHigh))
+
+ATEvec4 <- as.vector(ATE3)
+AverageSalaryLow <- unlist(ATEvec4)
+ggplot() + geom_point(aes(x = 1:60, y = AverageSalaryLow))
+
+ATEvec5 <- ATEvec4 - ATEvec2
+
+# new difference in treatment
+newDataset <- finalDataset1
+newDataset$Pk <- finalDataset1$Pk + 1
+
+ATENew <- (predict.local(finalDataset1, finalDataset1)) - (predict.local(newDataset, finalDataset1))
+ATENew
+sd(ATENew)
+mean(ATENew)
+
+sd(predict.local(newDataset, finalDataset1))
+
+ATEDPlm <- predict.local(newDataset, finalDataset1)
+
+ATENew
+
+# just the draft pick 
+ATEDP <- mean(predict.localDP(finalDataset1, finalDataset1))
+ATEDP
+
+# idk why this doesn't work
+ATEDP <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p)
+  mean(predict.localDP(grid2, finalDataset1))
+}))
+
+```
+
+## Fake data
+
+```{r}
+fakeData1 <- finalDataset1
+
+view(fakeData1)
+
+fakeData1$PCTCat <- fakeData1$Winning.Percentage
+fakeData1 <- fakeData1 %>%
+  mutate(PCTCat = cut(PCTCat, 
+                      breaks = c(0, 0.5, 1),
+                      labels = c("Below", "Above")))
+fakeData1$MPGCat <- as.numeric(fakeData1$MPG)
+fakeData1 <- fakeData1 %>%
+  mutate(MPGCat = cut(MPGCat, 
+                   breaks = c(0, 16, 32, 48), 
+                   labels = c("Low", "Medium", "High")))
+
+
+
+
+goodhigh <- fakeData1$Winning.Percentage > 0.5 & fakeData1$MPGCat == "High"
+fakeData1[goodhigh,]$salary = runif(sum(goodhigh), min = 2193901, max = 6000000)
+
+goodmedium <- fakeData1$Winning.Percentage > 0.5 & fakeData1$MPGCat == "Medium"
+fakeData1[goodmedium,]$salary = runif(sum(goodmedium), min = 799375, max = 2193900)
+
+goodlow <- fakeData1$Winning.Percentage > 0.5 & fakeData1$MPGCat == "Low"
+fakeData1[goodlow,]$salary = runif(sum(goodlow), min = 24263, max = 799375)
+
+badhigh <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "High"
+fakeData1[badhigh,]$salary = runif(sum(badhigh), min = 2193901, max = 6000000)
+
+badmedium <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Medium"
+fakeData1[badmedium,]$salary = runif(sum(badmedium), min = 799375, max = 2193900)
+
+badlow <- fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Low"
+fakeData1[badlow,]$salary = runif(sum(badlow), min = 24263, max = 799375)
+
+ATE <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  # mean(predict.local(grid2, finalDataset1) - predict.local(grid3, finalDataset1))
+  mean(predict.local(grid2, fakeData1) - predict.local(grid3, fakeData1))
+  # mean(predict.local(grid3, finalDataset1))
+}))
+
+ATE2 <- data.frame(lapply(1:60, function(p) {
+  grid2 <- expand.grid(Pk = p, Winning.Percentage = 0.75, MPG = 1:48)
+  grid3 <- expand.grid(Pk = p, Winning.Percentage = 0.25, MPG = 1:48)
+  # mean(predict.local(grid2, finalDataset1) - predict.local(grid3, finalDataset1))
+  # mean(predict.local(grid2, fakeData1))
+  mean(predict.local(grid3, fakeData1))
+}))
+
+ATEvec5 <- as.vector(ATE)
+ATEvec6 <- unlist(ATEvec5)
+ggplot() + geom_point(aes(x = 1:60, y = ATEvec6))
+
+ATEvec7 <- as.vector(ATE)
+ATEvec8 <- unlist(ATEvec7)
+ggplot() + geom_point(aes(x = 1:60, y = ATEvec8))
+
+ggplot() + geom_point(aes(x = 1:60, y = ATEvec8 - ATEvec6))
+
+```
+
+## doing the mu instead of mu hat estimation
+
+```{r}
+# replace 
+mu <- function(row) {
+  if (row$Winning.Percentage > 0.5 & row$MPG == "High") {
+    row$salary <- (2193901 + 6000000) / 2
+  } else if (row$Winning.Percentage > 0.5 & row$MPGCat == "Medium") {
+    row$salary <- (799375 + 2193900) / 2
+  } else if (row$Winning.Percentage > 0.5 & row$MPGCat == "Low") {
+    row$salary <- (24263 + 799374) / 2
+  } else if (fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "High") {
+    row$salary <- (2193901 + 6000000) / 2
+  } else if (fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Medium") {
+    row$salary <- (799375 + 2193900) / 2
+  } else if (fakeData1$Winning.Percentage < 0.5 & fakeData1$MPGCat == "Low") {
+    row$salary <- (24263 + 799374) / 2
+  }
+}
+
+write.csv(fakeData1,"/Users/ljon4/Downloads/fakeData1.csv", row.names = FALSE)
+write.csv(finalDataset1,"/Users/ljon4/Downloads/finalDataset1.csv", row.names = FALSE)
+
+
+```
+
+```{r}
+# model using continuous variables 
+set.seed(1)
+model = lm(salary ~ Pk + MPG + Winning.Percentage, data=finalDataset1)
+coef(model)
+# 2037830.63, -34146.66, 42663.26, -582780.76
+
+# assigning the coefficients based on model estimation
+betahat <- c(2037830.63,-34146.66, 42663.26, -582780.76)
+
+# phi function as a function of our features
+phi <- function(MPG, Winning.Percentage, Pk) {
+  rbind(1, MPG, Winning.Percentage, Pk)
+}
+
+phi1 <- phi(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk)
+
+dim(phi1)
+
+# mu function as a function of our features
+muhat = function(MPG, Winning.Percentage, Pk) {
+  t(phi(MPG, Winning.Percentage, Pk)) %*% betahat
+}
+
+mu1 <- muhat(finalDataset1$MPG, finalDataset1$Winning.Percentage, finalDataset1$Pk)
+
+view(mu1)
+
+sigma = function(x) { 1/(1+abs(x)) }
+
+# possible way to just get sigmahat with R?
+test = sigma.hat(model)
+
+test
+install.packages("arm")
+library(arm)
+
+# sigma.hat function adapted for our features
+sigma.hatPk = array(0, dim=c(2,2))
+sigma.hatMPG = array(0, dim=c(2,2))
+sigma.hatWinning.Percentage = array(0, dim=c(2,2))
+
+for (i in 1:500) {
+  sigma.hatPk = sigma.hatPk + phi(finalDataset1$Pk[i]) %*% t(phi(finalDataset1$Pk[i]))/n
+  sigma.hatMPG = sigma.hatMPG + phi(finalDataset1$MPG[i]) %*% t(phi(finalDataset1$MPG[i]))/n
+  sigma.hatWinning.Percentage = sigma.hatWinning.Percentage + phi(finalDataset1$Winning.Percentage[i]) %*% t(phi(finalDataset1$Winning.Percentage[i]))/n
+}
+
+sigma.hat.inv.Pk = solve(sigma.hatPk)
+sigma.hat.inv.MPG = solve(sigma.hatMPG)
+sigma.hat.inv.WP = solve(sigma.hatWinning.Percentage)
+
+# calculating sigma.hat.w
+sigma.hat.wPk = array(0, dim=c(2,2))
+sigma.hat.wMPG = array(0, dim=c(2,2))
+sigma.hat.wWinning.Percentage = array(0, dim=c(2,2))
+
+# calculating V
+for(i in 1:n) { 
+    sigma.hat.wPk = sigma.hat.wPk + sigma(finalDataset1$Pk[i])^2 * phi(finalDataset1$Pk[i]) %*% t(phi(finalDataset1$Pk[i]))/n 
+    sigma.hat.wMPG = sigma.hat.wMPG + sigma(finalDataset1$MPG[i])^2 * phi(finalDataset1$MPG[i]) %*% t(phi(finalDataset1$MPG[i]))/n
+    sigma.hat.wWinning.Percentage = sigma.hat.wWinning.Percentage + sigma(finalDataset1$Winning.Percentage[i])^2 * phi(finalDataset1$Winning.Percentage[i]) %*% t(phi(finalDataset1$Winning.Percentage[i]))/n
+}
+
+  # Calculate V and sigma.hat.u
+  Sigma.hat = array(0, dim=c(2,2))
+  for(i in 1:n) { Sigma.hat = Sigma.hat + phi(X[i]) %*% t(phi(X[i]))/n }
+  
+  Sigma.hat
+  
+  Sigma.hat.inv = solve(Sigma.hat)
+  Sigma.hat.w = array(0, dim=c(2,2))
+  for(i in 1:n) { 
+    Sigma.hat.w = Sigma.hat.w + sigma(X[i])^2 * phi(X[i]) %*% t(phi(X[i]))/n 
+  }
+  V = Sigma.hat.inv %*% Sigma.hat.w %*% Sigma.hat.inv
+  sigma.hat.u = sqrt( t(phi(1)) %*% V %*% phi(1) / n )
+  
+  
+    # Calculate Z stat and Interval
+  Z = (mu.hat.1 - mu(1) )/sigma.hat.u  # in [-1, 1] wp .68
+  a = mu.hat.1 - sigma.hat.u             
+  b = mu.hat.1 + sigma.hat.u
+
+```
